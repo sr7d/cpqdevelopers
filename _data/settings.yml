@@ -1,0 +1,112 @@
+#-------------------------------
+# Site Settings
+title: Salesforce CPQ & Revenue Cloud best practices and implementation guides
+# logo: /images/logo.png
+description: Discover best practices or download prebuilt solutions for Salesforce CPQ
+
+
+#-------------------------------
+# Author Global Settings
+author:
+  author__name: Skylar Rhodes
+  author__bio: Hey, I'm Skylar Rhodes, a Salesforce Quote-to-Cash Architect. I created CPQDevelopers to fill the void of information that developers, admins, and product owners face while navigating the complicated world of Salesforce Revenue. I hope you find this site an invaluable resource. Please feel free to reach out to me for collaboration, business inquiries, or just to say "Hi"!
+  author__avatar: /images/01-1.jpg
+
+ 
+#-------------------------------
+# Navigation Settings
+menu__settings:
+  menu__items:
+    - title: 'Data Models'
+      submenu:
+      - url: '/salesforce-cpq-data-model/'
+        title: 'CPQ Primary Objects'
+      - url: '/salesforce-revenue-cloud-data-model/'
+        title: 'Revenue Cloud Data Model'
+    - title: 'Packages'
+      submenu:
+      - url: '/user-product-filters/'
+        title: 'CPQ User Product Filters'
+    - title: 'Calculators'
+      submenu:
+      - url: '/cpq-price-waterfall-calculator/'
+        title: 'CPQ Price Waterfall'   
+    - title: 'Contact'
+      submenu:
+      - url: '/contact/'
+        title: 'CPQDEV LLC' 
+      - url: '/authors/'
+        title: 'Our Authors'           
+
+
+#-------------------------------
+# Hero Settings
+hero:
+  hero__title: 
+#-------------------------------
+# Blog Settings
+blog:
+  blog__title: Optimize Salesforce CPQ & Revenue Cloud
+  blog__description: Strategies, guides, diagrams, and free resources to master <a href="/tags/?tag=cpq"><em>Salesforce CPQ</em></a> and the <a href="/tags/?tag=revenue-cloud"><em>New Revenue Cloud</em></a>. If you're looking for personalized support, schedule a free consultation with our experts!
+   # blog__call-to-action: Browse the articles below or go straight to  
+
+#-------------------------------
+# Recommended Tag Settings
+tag:
+  enable: true
+  tag__title: Video Guides
+  tag__name: video-guides
+
+
+#-------------------------------
+# Newsletter Settings
+mailchimp:
+  enable: false
+  mailchimp__identifier: frnla.us6.list-manage.com/subscribe/post?u=6314d69a3f315af7ce3fb00a0&amp;id=3038727cc3 # Add your MailChimp form identifier. For example - frnla.us6.list-manage.com/subscribe/post?u=6314d69a3f315af7ce3fb00a0&amp;id=3038727cc3
+  mailchimp__title: Get interesting news
+  mailchimp__description: Subscribe to our newsletter and we’ll send you the emails of latest posts.
+  mailchimp__input__text: Your Email Address...
+  mailchimp__button__text: Subscribe
+  mailchimp__background__image: "/images/110.jpg"
+
+
+#-------------------------------
+# Footer Settings
+
+# Footer Navigation
+footer__menu__settings:
+  menu__items: 
+    - title: 'CPQDEV LLC'
+      url: '/contact/' 
+    - title: 'Authors'
+      url: '/authors/'       
+
+
+# Social Links
+social:
+- {icon: "ion-logo-linkedin", color: "#55acee", name: Linkedin, link: "https://www.linkedin.com/in/skylarrhodes/"}
+- {icon: "ion-logo-youtube", color: "#ff0000", name: Youtube, link: "https://www.youtube.com/@qtcdevs"}
+- {icon: "ion-logo-github", color: "#ff0000", name: Github, link: "https://www.github.com/sr7d"}
+
+# Example of adding a new link to the footer - {icon: "ion-logo-youtube", color: "#ff0000", name: Youtube, link: "https://youtube.com"}
+# Other icons can be found at https://ionicons.com/v4/
+
+
+#-------------------------------
+# Contact Settings
+contact:
+  endpoint: https://formspree.io/f/xpzgylpq
+
+# NOTE
+# Dann theme comes with a contact form built-in. You can use this form with Formspree (https://formspree.io/) service and get up to 50 submissions for free. Also, you can easily switch to another service if you want.
+
+
+#-------------------------------
+# Comment Section (Disqus)
+disqus:
+  enable: false
+  disqus__identifier: cpqdevelopers # Add your shortname for Disqus Comment. For example anvod-studio-test
+
+#-------------------------------
+# Google Analytics
+google-analytics: G-RVLJ96FCEK
