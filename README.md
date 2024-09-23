@@ -1,1 +1,1 @@
-this repo is used to host https://qtcdevs.com
+this repo is used to host https://cpqdevelopers.com
