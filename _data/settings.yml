@@ -9,7 +9,7 @@ description: Discover best practices or download prebuilt solutions for Salesfor
 # Author Global Settings
 author:
   author__name: Skylar Rhodes
-  author__bio: Hey, I'm Skylar Rhodes, a Salesforce Quote-to-Cash Architect. I created CPQDevelopers to fill the void of information that developers, admins, and product owners face while navigating the complicated world of Salesforce Revenue. I hope you find this site an invaluable resource. Please feel free to reach out to me for collaboration, business inquiries, or just to say "Hi"!
+  author__bio: Hey, I'm Skylar Rhodes, a Salesforce CPQ & Revenue Cloud Architect. I created CPQDevelopers to fill the void of information that developers, admins, and product owners face while navigating the complicated world of Salesforce Revenue. I hope you find this site an invaluable resource. Please feel free to reach out to me for collaboration, business inquiries, or just to say "Hi"!
   author__avatar: /images/01-1.jpg
 
  
@@ -41,13 +41,13 @@ hero:
 # Blog Settings
 blog:
   blog__title: Optimize Salesforce CPQ & Revenue Cloud
-  blog__description: Strategies, guides, diagrams, and free resources to master <a href="/tags/?tag=cpq"><em>Salesforce CPQ</em></a> and the <a href="/tags/?tag=revenue-cloud"><em>New Revenue Cloud</em></a>. If you're looking for personalized support, schedule a free consultation with an expert!
+  blog__description: Strategies, guides, diagrams, and free resources to master <a href="/tags/?tag=cpq"><em>Salesforce CPQ</em></a> and the <a href="/tags/?tag=revenue-cloud"><em>New Revenue Cloud</em></a>. If you're looking for personalized support, book time with us to learn how we can help!
    # blog__call-to-action: Browse the articles below or go straight to  
 
 #-------------------------------
 # Recommended Tag Settings
 tag:
-  enable: true
+  enable: false
   tag__title: Video Guides
   tag__name: video-guides
 

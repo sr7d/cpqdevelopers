@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   // Search
-  function searchOpen() {
+  window.searchOpen = function() {
     search.classList.add("is-visible");
     html.classList.add("search-is-visible");
     globalWrap.classList.add("is-active");
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
     setTimeout(function () {
       searchInput.focus();
     }, 250);
-  }
+  };
 
   function searchClose() {
     search.classList.remove("is-visible");
