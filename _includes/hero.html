@@ -1,14 +1,179 @@
-<!-- begin hero 
 <section class="hero">
-  <div class="container">
+  <div id="heroDiv" class="container">
     <div class="row">
       <div class="col col-12">
-        <div class="hero__inner">
-          <h1 class="hero__title">{{ site.data.settings.hero.hero__title }}</h1>
+        <div class="quote-bubble">
+          <div class="hero__inner">
+            <h1 class="hero__title">{{ site.data.settings.hero.hero__title }}</h1>
+          </div>
+          <div class="hero__description__inner">
+            <p class="hero__description">{{ site.data.settings.hero.hero__description }}</p>
+          </div>
+        </div>
+        <div class="animation-container">
+          <div class="column column-1">
+            <img src="/images/sales_channel.svg" alt="Sales" />
+            <ul>
+              <li class="featuredULs"></li>
+              <li>Marketing</li>
+              <li>Sales</li>
+              <li>Renewals</li>
+            </ul>
+          </div>
+          <div class="column column-2">
+            <img src="/images/bundle_config.svg" alt="CPQ / Revenue Cloud" class="animated-svg" />
+            <ul>
+              <li class="featuredULs"></li>
+              <li>Configure</li>
+              <li>Price</li>
+              <li>Quote</li>
+            </ul>
+          </div>
+          <div class="column column-3">
+            <img src="/images/fulfillment_order.svg" alt="ERP" />
+            <ul>
+              <li class="featuredULs"></li>
+              <li>Onboarding</li>
+              <li>Provisioning</li>
+              <li>Finance</li>
+            </ul>
+          </div>
+          <div class="animatedicon"></div>
         </div>
       </div>
     </div>
   </div>
   {% include featured-section.html %}
 </section>
- -->
+
+<style>
+  .quote-bubble {
+    background-color: #F6F9FC;
+    border-radius: 25px; /* Rounded corners */
+    padding: 20px; /* Padding inside the bubble */
+    box-shadow: 0 18px 20px rgba(0, 0, 0, 0.25), 0 12px 30px rgba(0, 0, 0, 0.25); /* More obvious shadows */
+    position: relative; /* For the pseudo-element */
+    margin: 20px 0; /* Margin around the bubble */
+  }  
+  
+  .quote-bubble::before {
+    content: '';
+    position: absolute;
+    bottom: 100%; /* Position the triangle above the bubble */
+    left: 15%; /* Adjusted to move it more to the left */
+    margin-left: -20px; /* Center the triangle based on its size */
+    border-width: 20px; /* Increased size of the triangle */
+    border-style: solid;
+    border-color: transparent transparent #f9f9f9 transparent; /* Triangle pointing down */
+  }  
+  
+  .quote-bubble h1, .quote-bubble p {
+    margin: 0; /* Remove default margins */
+  }
+  
+  .animation-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    height: 350px;
+    position: relative;
+  }
+  
+  .column {
+    flex: 1;
+    text-align: center;
+    font-size: 18px;
+    position: relative;
+  }
+  
+  .column img {
+    width: 150px; /* Increased size of SVG images */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space between image and text */
+  }
+  
+  .column ul {
+    list-style-type: none; /* Hide bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+  }
+  
+  .animatedicon {
+    width: 50px;
+    height: 50px;
+    background-image: url('/images/new_opportunity.svg');
+    position: absolute;
+    top: 10%;
+    left: 0; /* Change this to control horizontal movement */
+    opacity: 0;
+    animation: factory 3s ease-in-out infinite; /* Increased duration for better pause effect */
+  }
+  
+  @keyframes factory {
+    0% {
+      left: 22%;
+      opacity: 0;
+      transform: scale(1);
+    }
+    10% {
+      opacity: 1;
+      transform: scale(1.1, 1);
+    }
+    30% {
+      left: 38%;
+      opacity: 0;
+      transform: scale(1); /* Hold the size at peak position */
+    }
+    60% {
+      left: 56%; /* Adjust to desired exit position */
+      opacity: 0;
+      transform: scale(0.9, 1);
+    }
+    85% {
+      opacity: 1;
+    }
+    95% {
+      left: 72%; /* Final exit position */
+      opacity: 0;
+      transform: scale(1.1, 1);
+    }
+    100% {
+      left: 72%; /* Final exit position */
+      opacity: 0; /* Fade out at the end */
+      transform: scale(1); /* Return to original size for smooth exit */
+    }
+  }
+  
+  @keyframes bundleAnimation {
+    0%, 30% {
+      transform: scale(1);
+    }
+    35% {
+      transform: scale(1.2) rotate(10deg); /* Shake and grow effect */
+    }
+    40% {
+      transform: scale(1.2) rotate(-10deg); /* Shake and grow effect */
+    }
+    45% {
+      transform: scale(1.2); /* Hold the size */
+    }
+    50% {
+      transform: scale(1); /* Return to normal */
+    }
+    60%, 100% {
+      opacity: 1; /* Keep it visible */
+    }
+  }
+  
+  .animated-svg {
+    animation: bundleAnimation 3s infinite; /* Use 'infinite' to loop the animation */
+  }
+  
+  .featuredULs {
+    border-bottom: 2px solid #f9f9f9;
+    margin-left: 25%;
+    width: calc(50%);
+    margin-bottom: 20px;
+    margin-top: -0px;
+  }   
+</style>

@@ -10,7 +10,7 @@
             <img class="logo__image" src="{{ site.baseurl }}{{ site.data.settings.logo }}" alt="{{ site.data.settings.title }}">
           {% else %}
             <!-- {{ site.data.settings.title }} -->
-            <span>CPQDevelopers</span>
+            <span id="cpq">cpq</span><span>developers</span>
           {% endif %}
           </a>
         </div>
@@ -45,7 +45,7 @@
                 <!-- Calendly -->
                 <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
                 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-                <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/cpqdevelopers/15min'});return false;" class="nav__link{% if page.url == item.url %} active-link{% endif %}">🔥 Book Time Now</a>
+                <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/cpqdevelopers/15min'});return false;" class="nav__link{% if page.url == item.url %} active-link{% endif %}">🔥 Our Services</a>
               </li>
             </ul>
           </div>

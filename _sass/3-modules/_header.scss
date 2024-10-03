@@ -96,8 +96,11 @@
   font-size: 32px;
   letter-spacing: $heading-letter-spacing;
   line-height: 1;
-  font-weight: 800;
+  font-weight: 700;
   transition: color .2s ease;
+}
+#cpq{
+  letter-spacing: 0.2px;
 }
 
 .logo__image {

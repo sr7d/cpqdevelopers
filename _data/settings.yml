@@ -36,12 +36,13 @@ menu__settings:
 #-------------------------------
 # Hero Settings
 hero:
-  hero__title: 
+  hero__title: Optimize Salesforce CPQ & Revenue Cloud
+  hero__description: Strategies, guides, diagrams, and free resources to master Salesforce CPQ and Revenue Cloud. If you're looking for personalized support, book time with us to learn how we can help!
 #-------------------------------
 # Blog Settings
 blog:
-  blog__title: Optimize Salesforce CPQ & Revenue Cloud
-  blog__description: Strategies, guides, diagrams, and free resources to master <a href="/tags/?tag=cpq"><em>Salesforce CPQ</em></a> and the <a href="/tags/?tag=revenue-cloud"><em>New Revenue Cloud</em></a>. If you're looking for personalized support, book time with us to learn how we can help!
+  blog__title: Blog
+  blog__description: Read about Salesforce <a href="/tags/?tag=cpq"><em>CPQ</em></a> and <a href="/tags/?tag=revenue-cloud"><em>Revenue Cloud</em></a>
    # blog__call-to-action: Browse the articles below or go straight to  
 
 #-------------------------------

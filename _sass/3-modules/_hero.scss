@@ -1,7 +1,7 @@
 /* Hero */
 .hero {
   padding: 80px 0 0;
-  margin-bottom: 96px;
+  // margin-bottom: 96px;
   color: var(--white);
   background-color: var(--dark);
 
@@ -19,23 +19,38 @@
   display: flex;
   align-items: center;
   max-width: 1160px;
-  margin-bottom: 96px;
+  margin-bottom: 8px;
 
   @media (max-width: $desktop) {
-    margin-bottom: 80px;
+    // margin-bottom: 80px;
   }
 
   @media (max-width: $mobile) {
-    margin-bottom: 48px;
+    // margin-bottom: 48px;
+  }
+}
+
+.hero__description__inner {
+  display: flex;
+  align-items: center;
+  max-width: 1160px;
+  margin-bottom: 26px;
+
+  @media (max-width: $desktop) {
+    // margin-bottom: 80px;
+  }
+
+  @media (max-width: $mobile) {
+    // margin-bottom: 48px;
   }
 }
 
 .hero__title {
   margin-bottom: 0;
   font-size: 52px;
-  font-weight: 600;
+  font-weight: 800;
   line-height: 1.4;
-  color: var(--white);
+  color: var(--text-color);
 
   @media (max-width: $desktop) {
     font-size: 40px;
@@ -47,5 +62,24 @@
 
   @media (max-width: $mobile) {
     font-size: 28px;
+  }
+}
+
+.hero__description {
+  margin-bottom: 0;
+  font-size: 22px;
+  line-height: 1.4;
+  color: var(--text-color);
+
+  @media (max-width: $desktop) {
+    font-size: 18px;
+  }
+
+  @media (max-width: $tablet) {
+    font-size: 16px;
+  }
+
+  @media (max-width: $mobile) {
+    font-size: 12px;
   }
 }
