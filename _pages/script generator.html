@@ -1,0 +1,126 @@
+---
+layout: page
+title: Data Deployment Script Generator
+description: This tool allows you to create a reusable data deployment script using anonymous apex. Follow these steps to create your script
+permalink: /data-deployment-script-generator/
+---
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+
+<style>
+  textarea {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    height: 300px;
+  }
+  #outputText{
+    background: linear-gradient(to bottom, #CACBCD, #F6F9FC);
+    color: white;
+    max-height: 500px;
+  }
+</style>
+
+<div class="container">
+  <ol>
+    <li>Query data from Salesforce using <a href="https://chromewebstore.google.com/detail/salesforce-inspector-relo/hpijlohoihegkfehhibggnkbjhoemldh" target="_blank" rel="noopener noreferrer">Salesforce Inspector Reloaded</a></li>
+    <li>Copy the results as JSON</li>
+    <li>Paste the JSON below to generate Apex code for deploying that data in a target org</li>
+    <li>Deploy the generated Apex code via <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">VSCode</a>, <a href="https://workbench.developerforce.com/" target="_blank" rel="noopener noreferrer">Workbench</a>, or the Developer Console</li>
+  </ol>  
+
+  <button class="button button--primary" onclick="generateScript()">Generate</button>
+  <button class="button button--primary" onclick="copyToClipboard()" style="display: none">&nbsp;&nbsp;Copy&nbsp;&nbsp;</button>
+  <span id="copied" style="display: none;">&nbsp;✅ Copied!</span>
+  <br>
+  <br>
+  <textarea id="jsonInput" placeholder="Paste your JSON here..."></textarea>
+</div>
+
+<div id="outputContainer" class="output" style="display: none;">
+  <pre id="outputText" class="language-apex"></pre>
+</div>
+
+<script>
+  function generateScript() {
+    const jsonInput = document.getElementById('jsonInput').value;
+    let jsonData;
+
+    try {
+      jsonData = JSON.parse(jsonInput);
+    } catch (error) {
+      alert('Invalid JSON data');
+      return;
+    }
+
+    const objectType = jsonData[0]?.attributes?.type || "UnknownType";
+    let script = `Map<String, Map<String, Object>> objectSettings = new Map<String, Map<String, Object>>{\n`;
+
+    jsonData.forEach((item, index) => {
+      let Name = item.Name ? item.Name.replace(/'/g, "\\'") : `Object_${index}`;
+      script += `'${Name}' => new Map<String, Object>{\n`;
+      script += `'targetObject' => new ${objectType}(\n`;
+
+      for (let key in item) {
+        if (key !== "attributes") {
+          let value = item[key];
+          let formattedValue;
+
+          if (typeof value === 'boolean' || value === null) {
+            formattedValue = value;
+          } else if (typeof value === 'number') {
+            formattedValue = value;
+          } else {
+            formattedValue = `'${value.replace(/'/g, "\\'")}'`;
+          }
+
+          script += `${key}=${formattedValue},\n`;
+        }
+      }
+
+      script = script.slice(0, -2) + '\n';
+      script += ")\n},\n";
+    });
+
+    script = script.slice(0, -2) + '\n};\n';
+
+    script += `for (String Name : objectSettings.keySet()) {
+      Map<String, Object> settings = objectSettings.get(Name);
+      ${objectType} targetObject = (${objectType}) settings.get('targetObject');
+      List<${objectType}> existingObject = [
+        SELECT Id
+        FROM ${objectType}
+        WHERE Id = :targetObject.Id
+        ORDER BY CreatedDate DESC
+      ];
+      if (!existingObject.isEmpty()) {
+        targetObject.Id = existingObject[0].Id;
+      }
+      upsert targetObject;
+    }`;
+
+    document.getElementById('jsonInput').style.display = 'none';
+    document.querySelector('button[onclick="generateScript()"]').style.display = 'none';
+    document.querySelector('button[onclick="copyToClipboard()"]').style.display = '';
+    document.getElementById('outputContainer').style.display = 'block';
+
+    // Set output text and highlight the code
+    document.getElementById('outputText').textContent = script;
+    hljs.highlightElement(document.getElementById('outputText'));
+  }
+
+  function copyToClipboard() {
+    const outputText = document.getElementById('outputText').textContent;
+    const tempTextArea = document.createElement('textarea');
+    tempTextArea.value = outputText;
+    document.body.appendChild(tempTextArea);
+    tempTextArea.select();
+    document.execCommand('copy');
+    document.body.removeChild(tempTextArea);
+    document.getElementById('copied').style.display = '';
+  }
+</script>

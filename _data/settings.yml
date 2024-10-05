@@ -27,8 +27,10 @@ menu__settings:
       submenu:
       - url: '/user-product-filters/'
         title: 'CPQ User Product Filters'
-    - title: 'Calculators'
+    - title: 'Tools'
       submenu:
+      - url: '/data-deployment-script-generator/'
+        title: 'Data Deployment Script Generator'  
       - url: '/cpq-price-waterfall-calculator/'
         title: 'CPQ Price Waterfall'           
 
