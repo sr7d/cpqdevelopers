@@ -32,14 +32,16 @@ menu__settings:
       - url: '/data-deployment-script-generator/'
         title: 'Data Deployment Script Generator'  
       - url: '/cpq-price-waterfall-calculator/'
-        title: 'CPQ Price Waterfall'           
+        title: 'CPQ Price Waterfall'
+    - title: 'Authors'
+      url: '/Authors/'                   
 
 
 #-------------------------------
 # Hero Settings
 hero:
   hero__title: Optimize Salesforce CPQ & Revenue Cloud
-  hero__description: Strategies, guides, diagrams, and free resources to master Salesforce CPQ and Revenue Cloud. If you're looking for personalized support, book time with us to learn how we can help!
+  hero__description: Strategies, guides, diagrams, and free resources to master Salesforce CPQ and Revenue Cloud. If you're looking for personalized support, view our services to learn how we can help!
 #-------------------------------
 # Blog Settings
 blog:
@@ -51,8 +53,8 @@ blog:
 # Recommended Tag Settings
 tag:
   enable: false
-  tag__title: Video Guides
-  tag__name: video-guides
+  tag__title: Case Studies
+  tag__name: case-studies
 
 
 #-------------------------------
@@ -73,7 +75,7 @@ mailchimp:
 # Footer Navigation
 footer__menu__settings:
   menu__items: 
-    - title: 'CPQDEV LLC'
+    - title: 'Company'
       url: '/contact/' 
     - title: 'Authors'
       url: '/authors/'       

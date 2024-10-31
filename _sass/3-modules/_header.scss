@@ -99,8 +99,12 @@
   font-weight: 700;
   transition: color .2s ease;
 }
-#cpq{
-  letter-spacing: 0.2px;
+#cpq {
+  letter-spacing: 1px;
+}
+
+#developers {
+  letter-spacing: 0.25px;
 }
 
 .logo__image {
@@ -260,7 +264,7 @@
       transform: translate3d(0, 10px, 0);
       backface-visibility: hidden;
       z-index: 100;
-      min-width: 160px;
+      min-width: 250px;
       display: block;
       padding: 16px;
       opacity: 0;

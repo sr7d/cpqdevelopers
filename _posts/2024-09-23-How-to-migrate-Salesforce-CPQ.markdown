@@ -3,7 +3,7 @@ layout: post
 title: How to Migrate to Salesforce CPQ
 description: Migrating data to Salesforce CPQ is a critical step in implementing or transitioning to this powerful tool. Whether you’re moving from a legacy CPQ system, spreadsheets, or another CRM, the process involves a detailed plan and a clear strategy to ensure data integrity and accuracy. In this article, we’ll discuss best practices for Salesforce CPQ data migration, the challenges you may face, and how to overcome them.
 date: 2024-08-29 15:01:35 +0300
-author: rahul_sharma
+author: admin
 image: /images/migration.png
 image_caption: 
 tags: [cpq,migration]
