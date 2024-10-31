@@ -34,7 +34,7 @@ menu__settings:
       - url: '/cpq-price-waterfall-calculator/'
         title: 'CPQ Price Waterfall'
     - title: 'Authors'
-      url: '/Authors/'                   
+      url: '/authors/'                   
 
 
 #-------------------------------
