@@ -2,7 +2,7 @@
 layout: post
 title: Why the hype about Revenue Lifecycle Management (RLM)
 description: Explore why the Salesforce Partner Ecosytem is so excited about the new devlopments of Revenue Lifecycle Management!
-date: 2024-10-07 15:01:35 +0300
+date: 2024-10-31 15:01:35 +0300
 author: mihir_mehta
 image: /images/salesforce_projection.png
 image_caption: 
