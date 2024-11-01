@@ -75,7 +75,7 @@ mailchimp:
 # Footer Navigation
 footer__menu__settings:
   menu__items: 
-    - title: 'Company'
+    - title: 'Contact'
       url: '/contact/' 
     - title: 'Authors'
       url: '/authors/'       
