@@ -6,7 +6,7 @@ date: 2023-08-18 15:01:35 +0300
 author: admin
 image: /images/VersionControl.png
 image_caption: 
-tags: [cpq,version-control]
+tags: [cpq,version-control,package]
 featured:
 video_embed: 
 ---

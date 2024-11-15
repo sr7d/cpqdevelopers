@@ -53,8 +53,8 @@ blog:
 # Recommended Tag Settings
 tag:
   enable: false
-  tag__title: Case Studies
-  tag__name: case-studies
+  tag__title: 📦 Install Packages
+  tag__name: package
 
 
 #-------------------------------
