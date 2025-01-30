@@ -40,12 +40,12 @@ menu__settings:
 #-------------------------------
 # Hero Settings
 hero:
-  hero__title: Optimize Salesforce CPQ & Revenue Cloud
-  hero__description: Strategies, guides, diagrams, and free resources to master Salesforce CPQ and Revenue Cloud. If you're looking for personalized support, view our services to learn how we can help!
+  hero__title: Salesforce Revenue Cloud and CPQ Experts
+  hero__description: We implement Salesforce <strong>Revenue Cloud Advanced (RCA)</strong> and <strong>Configure Price Quote (CPQ)</strong>. Explore our articles below or schedule time to find out how we may be able to assist you!
 #-------------------------------
 # Blog Settings
 blog:
-  blog__title: Blog
+  blog__title: Articles
   blog__description: Read about Salesforce <a href="/tags/?tag=cpq"><em>CPQ</em></a> and <a href="/tags/?tag=revenue-cloud"><em>Revenue Cloud</em></a>
    # blog__call-to-action: Browse the articles below or go straight to  
 
