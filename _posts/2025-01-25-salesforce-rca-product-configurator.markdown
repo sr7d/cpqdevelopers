@@ -6,7 +6,7 @@ date: 2025-01-24 15:01:35 +0300
 author: admin
 image: /images/ruminations.png
 image_caption: 
-tags: [revenue-cloud-advanced,rlm]
+tags: [revenue-cloud]
 featured:
 video_embed: 
 ---

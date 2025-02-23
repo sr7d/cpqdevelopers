@@ -9,7 +9,7 @@ description: Discover best practices or download prebuilt solutions for Salesfor
 # Author Global Settings
 author:
   author__name: Skylar Rhodes
-  author__bio: Hey, I'm Skylar Rhodes, a Salesforce CPQ & Revenue Cloud Architect. I created CPQDevelopers to fill the void of information that developers, admins, and product owners face while navigating the complicated world of Salesforce Revenue. I hope you find this site an invaluable resource. Please feel free to reach out to me for collaboration, business inquiries, or just to say "Hi"!
+  author__bio: Hey, I'm Skylar Rhodes, a Salesforce CPQ & Revenue Cloud Architect. I created cpqdevelopers to fill the void of information that developers, admins, and product owners face while navigating the complicated world of Salesforce Revenue. I hope you find this site an invaluable resource. Please feel free to reach out to me for collaboration, business inquiries, or just to say "Hi"!
   author__avatar: /images/01-1.jpg
 
  
@@ -46,7 +46,7 @@ hero:
 # Blog Settings
 blog:
   blog__title: Articles
-  blog__description: Read about Salesforce <a href="/tags/?tag=cpq"><em>CPQ</em></a> and <a href="/tags/?tag=revenue-cloud"><em>Revenue Cloud</em></a>
+  blog__description: Read our industry case studies and how-to guides
    # blog__call-to-action: Browse the articles below or go straight to  
 
 #-------------------------------
