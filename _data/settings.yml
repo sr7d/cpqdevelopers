@@ -17,7 +17,7 @@ author:
 # Navigation Settings
 menu__settings:
   menu__items:
-    - title: 'Data Models'
+    - title: 'Models'
       submenu:
       - url: '/salesforce-cpq-data-model/'
         title: 'CPQ Primary Objects'
@@ -34,14 +34,16 @@ menu__settings:
       - url: '/cpq-price-waterfall-calculator/'
         title: 'CPQ Price Waterfall'
     - title: 'Authors'
-      url: '/authors/'                   
+      url: '/authors/'
+    - title: 'Contact'
+      url: '/contact/'                          
 
 
 #-------------------------------
 # Hero Settings
 hero:
-  hero__title: Salesforce Revenue Cloud and CPQ Experts
-  hero__description: We implement Salesforce <strong>Revenue Cloud Advanced (RCA)</strong> and <strong>Configure Price Quote (CPQ)</strong>. Explore our articles below or schedule time to find out how we may be able to assist you!
+  hero__title: Salesforce CPQ & Revenue Cloud Subcontractor Services
+  hero__description: Get specialized, Salesforce CPQ and Revenue Cloud expertise for your projects. Explore the case studies and other articles below, or Book Time for us to make an introduction!
 #-------------------------------
 # Blog Settings
 blog:
@@ -75,10 +77,10 @@ mailchimp:
 # Footer Navigation
 footer__menu__settings:
   menu__items: 
-    - title: 'Contact'
-      url: '/contact/' 
-    - title: 'Authors'
-      url: '/authors/'       
+    - title: '📇 Virtual Card'
+      url: '/contact.vcf/' 
+    - title: '📄 Resume'
+      url: '/resume.pdf/'       
 
 
 # Social Links
