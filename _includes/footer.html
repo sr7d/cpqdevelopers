@@ -47,6 +47,9 @@
                 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
                 <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/cpqdevelopers/15min'});return false;"  class="widget-nav__link">📅 Book Time</a>
               </li> -->
+              <li class="widget-nav__item">
+                <a class="widget-nav__link" href="/contact.vcf">📇 Virtual Card</a>
+              </li>
               {% for item in site.data.settings.footer__menu__settings.menu__items %}
               <li class="widget-nav__item">
                 <a href="{{ item.url | relative_url }}" class="widget-nav__link">{{ item.title }}</a>
