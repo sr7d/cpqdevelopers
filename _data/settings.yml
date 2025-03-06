@@ -78,9 +78,9 @@ mailchimp:
 footer__menu__settings:
   menu__items: 
     - title: '📇 Virtual Card'
-      url: '/contact.vcf/' 
+      url: '/contact.vcf' 
     - title: '📄 Resume'
-      url: '/resume.pdf/'       
+      url: '/resume.pdf'       
 
 
 # Social Links
