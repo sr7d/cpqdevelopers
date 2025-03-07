@@ -54,9 +54,9 @@ blog:
 #-------------------------------
 # Recommended Tag Settings
 tag:
-  enable: false
-  tag__title: 📦 Install Packages
-  tag__name: package
+  enable: true
+  tag__title: Featured Revenue Cloud CPQ Articles
+  tag__name: revenue-cloud
 
 
 #-------------------------------
