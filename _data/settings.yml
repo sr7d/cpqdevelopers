@@ -1,15 +1,15 @@
 #-------------------------------
 # Site Settings
-title: Salesforce CPQ & Revenue Cloud Subcontractor Services
+title: Salesforce Revenue Cloud CPQ Contractor Services
 # logo: /images/logo.png
-description: Get specialized, Salesforce CPQ and Revenue Cloud expertise for your projects. Explore the case studies and other articles below, or Book Time for us to make an introduction!
+description: Get specialized, Salesforce Revenue Cloud CPQ expertise for your projects. Explore the case studies and other articles below, or Book Time for us to make an introduction!
 
 
 #-------------------------------
 # Author Global Settings
 author:
   author__name: Skylar Rhodes
-  author__bio: Hey, I'm Skylar Rhodes, a Salesforce CPQ & Revenue Cloud Architect. I created cpqdevelopers to fill the void of information that developers, admins, and product owners face while navigating the complicated world of Salesforce Revenue. I hope you find this site an invaluable resource. Please feel free to reach out to me for collaboration, business inquiries, or just to say "Hi"!
+  author__bio: Hey, I'm Skylar Rhodes, a Salesforce Revenue Cloud CPQ Architect. I created cpqdevelopers to fill the void of information that developers, admins, and product owners face while navigating the complicated world of Salesforce Revenue. I hope you find this site an invaluable resource. Please feel free to reach out to me for collaboration, business inquiries, or just to say "Hi"!
   author__avatar: /images/01-1.jpg
 
  
@@ -42,8 +42,8 @@ menu__settings:
 #-------------------------------
 # Hero Settings
 hero:
-  hero__title: Salesforce CPQ & Revenue Cloud Subcontractor Services
-  hero__description: Get specialized, Salesforce CPQ and Revenue Cloud expertise for your projects. Explore the case studies and other articles below, or Book Time for us to make an introduction!
+  hero__title: Salesforce Revenue Cloud CPQ <br>Contractor Services
+  hero__description: Get specialized Salesforce <em>Revenue Cloud CPQ</em> expertise for your projects. Explore the case studies and other articles below, or Book Time for us to make an introduction!
 #-------------------------------
 # Blog Settings
 blog:
