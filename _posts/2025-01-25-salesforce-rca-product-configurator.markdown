@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Product Configurator in Salesforce Revenue Cloud Advanced
+title: Product Configurator in Salesforce Revenue Cloud Advanced (RLM)
 description: Learn how to customize Salesforce RLM's Product Configurator, from modifying flows to assigning them to products, for a tailored and efficient configuration process.
 date: 2025-01-24 15:01:35 +0300
 author: admin
