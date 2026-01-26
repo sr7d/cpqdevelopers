@@ -34,6 +34,7 @@ To begin, we will sign up for a free trial of Salesforce Communications Cloud. C
 <form id="web-to-lead-form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00Da500001Nhn69" method="POST" target="hidden_iframe" style="display:none;">
   <input type="hidden" name="oid" value="00Da500001Nhn69">
   <input type="hidden" name="retURL" value="http://">
+  <input type="hidden" name="lead_source" value="cpqdevelopers.com/free-revenue-cloud-trial">
   <input type="hidden" id="lead-email" name="email" value="">
 </form>
 <iframe name="hidden_iframe" style="display:none;"></iframe>
