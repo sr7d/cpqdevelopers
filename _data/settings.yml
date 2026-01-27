@@ -17,22 +17,22 @@ author:
 # Navigation Settings
 menu__settings:
   menu__items:
-    - title: 'Models'
-      submenu:
-      - url: '/salesforce-cpq-data-model/'
-        title: 'CPQ Primary Objects'
-      - url: '/salesforce-revenue-cloud-data-model/'
-        title: 'Revenue Cloud Data Model'
-    - title: 'Packages'
+    - title: 'App Exchange'
       submenu:
       - url: '/user-product-filters/'
-        title: 'CPQ User Product Filters'
-    - title: 'Tools'
+        title: 'SilkQuote'      
+    - title: 'Resources'
       submenu:
       - url: '/data-deployment-script-generator/'
         title: 'Data Deployment Script Generator'  
       - url: '/cpq-price-waterfall-calculator/'
         title: 'CPQ Price Waterfall'
+      - url: '/salesforce-cpq-data-model/'
+        title: 'CPQ Primary Objects'
+      - url: '/salesforce-revenue-cloud-data-model/'
+        title: 'Revenue Cloud Data Model'
+      - url: '/user-product-filters/'
+        title: 'CPQ User Product Filters'        
     - title: 'Authors'
       url: '/authors/'
     - title: 'Contact'
@@ -42,8 +42,8 @@ menu__settings:
 #-------------------------------
 # Hero Settings
 hero:
-  hero__title: Salesforce Revenue Cloud & CPQ <br>Contractor Services
-  hero__description: Get specialized Salesforce <em>Revenue Cloud CPQ</em> expertise for your projects. Explore the case studies and other articles below, or Book Time for us to make an introduction!
+  hero__title: Evaluate Salesforce Revenue Cloud <br>with Confidence
+  hero__description: Get expert guidance, set up your trial, and gain <em>CPQ-to-Revenue Cloud</em> migration insights.
 #-------------------------------
 # Blog Settings
 blog:
@@ -55,7 +55,7 @@ blog:
 # Recommended Tag Settings
 tag:
   enable: true
-  tag__title: Featured Revenue Cloud (RCA / RLM) Articles
+  tag__title: Featured Revenue Cloud Articles
   tag__name: revenue-cloud
 
 
