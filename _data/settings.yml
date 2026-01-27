@@ -19,7 +19,7 @@ menu__settings:
   menu__items:
     - title: 'App Exchange'
       submenu:
-      - url: '/user-product-filters/'
+      - url: 'https://silkquote.com'
         title: 'SilkQuote'      
     - title: 'Resources'
       submenu:
