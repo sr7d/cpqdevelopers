@@ -5,4 +5,4 @@ image: '/images/01-1.jpg'
 calendar: https://calendly.com/cpqdevelopers
 linkedin: https://www.linkedin.com/in/skylarrhodes
 ---
-Salesforce CPQ Architect
+Salesforce Revenue Cloud CPQ Architect
