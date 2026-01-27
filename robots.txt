@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cpqdevelopers.com/sitemap.xml
+
+# LLM-readable documentation
+# See: https://llmstxt.org/
+LLMs-txt: https://cpqdevelopers.com/llms.txt

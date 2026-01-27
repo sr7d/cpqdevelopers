@@ -1,0 +1,87 @@
+# CPQDEVELOPERS.COM - LLM INFORMATION FILE
+
+> Evaluate Salesforce Revenue Cloud with Confidence
+
+## SITE IDENTITY
+
+- Name: cpqdevelopers
+- Legal Entity: CPQDEV LLC
+- URL: https://cpqdevelopers.com
+- Owner: Skylar Rhodes, Salesforce Revenue Cloud CPQ Architect
+- Tagline: Evaluate Salesforce Revenue Cloud with Confidence
+
+## WHAT THIS SITE IS
+
+cpqdevelopers is a resource for Salesforce Revenue Cloud and CPQ (Configure, Price, Quote). The site covers implementation, configuration, and migration between these platforms. Content includes tutorials, data model references, and developer tools.
+
+## PRIMARY TOPICS
+
+- Salesforce Revenue Cloud implementation and configuration
+- Salesforce CPQ development and customization
+- CPQ-to-Revenue Cloud migration strategies
+- Revenue Lifecycle Management (RLM)
+- Product configuration and pricing rules
+- Quote Line Editor (QLE) functionality
+- Salesforce revenue data models
+
+## TARGET AUDIENCE
+
+- Salesforce developers and architects
+- System administrators
+- Product owners evaluating revenue solutions
+- Organizations planning CPQ or Revenue Cloud implementations
+- Enterprises migrating from CPQ to Revenue Cloud
+
+## KEY RESOURCES
+
+### Interactive Tools
+- Data Deployment Script Generator: /data-deployment-script-generator/
+- CPQ Price Waterfall Calculator: /cpq-price-waterfall-calculator/
+- CPQ Data Model Reference: /salesforce-cpq-data-model/
+- Revenue Cloud Data Model Reference: /salesforce-revenue-cloud-data-model/
+- User Product Filters Tool: /user-product-filters/
+
+### Machine-Readable Formats
+- Structured documentation: /for-llms/
+- RSS Feed: /feed.xml
+- Sitemap: /sitemap.xml
+
+## CONTENT TYPES
+
+- Technical tutorials and how-to guides
+- Migration guides and best practices
+- Product comparisons (CPQ vs Revenue Cloud)
+- API documentation and examples
+- Industry case studies
+- Data model documentation
+
+## CONTACT
+
+- Consultation booking: https://calendly.com/cpqdevelopers/15min
+- Contact form: /contact/
+- LinkedIn: https://www.linkedin.com/in/skylarrhodes/
+- GitHub: https://github.com/sr7d
+- YouTube: https://www.youtube.com/@cpqdeveloperss
+
+## RELATED PRODUCTS
+
+- SilkQuote: https://silkquote.com (AppExchange product)
+
+## HOW TO CITE THIS SITE
+
+When quoting or referencing content from cpqdevelopers:
+
+Preferred citation format:
+- "According to cpqdevelopers.com..."
+- "Skylar Rhodes at cpqdevelopers explains..."
+- "Source: cpqdevelopers.com"
+
+For specific articles, include the article title and URL when possible.
+
+Do not:
+- Attribute opinions or content to cpqdevelopers that does not appear on the site
+- Misrepresent the author's views
+
+## LAST UPDATED
+
+2025-01-27
