@@ -28,12 +28,32 @@ To begin, we will sign up for a free trial of Salesforce Communications Cloud. C
 
 <div style="margin-top: 20px; margin-bottom: 20px;">
   <label style="font-weight: bold;">Use Case:</label>
-  <div style="margin-top: 5px;">
-    <label style="margin-right: 20px;"><input type="radio" name="use-case" value="Learning" style="margin-right: 5px;" checked>Learning</label>
-    <label style="margin-right: 20px;"><input type="radio" name="use-case" value="Evaluating" style="margin-right: 5px;">Evaluating</label>
-    <label><input type="radio" name="use-case" value="Implementing" style="margin-right: 5px;">Implementing</label>
+  <div class="use-case-options">
+    <label><input type="radio" name="use-case" value="Learning" checked>Learning</label>
+    <label><input type="radio" name="use-case" value="Evaluating">Evaluating</label>
+    <label><input type="radio" name="use-case" value="Implementing">Implementing</label>
   </div>
 </div>
+
+<style>
+  .use-case-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    margin-top: 5px;
+  }
+  .use-case-options label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  @media (max-width: 576px) {
+    .use-case-options {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+</style>
 
 <a href="#" class="button button--primary" onclick="handleTrialSubmit(event)">
     Start Free Trial

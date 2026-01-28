@@ -5,6 +5,14 @@
   @media (max-width: $desktop) {
     margin-bottom: 210px;
   }
+
+  @media (max-width: $tablet) {
+    margin-bottom: 120px;
+  }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 120px;
+  }
 }
 
 .featured__slider {
