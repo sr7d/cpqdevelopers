@@ -26,6 +26,15 @@ To begin, we will sign up for a free trial of Salesforce Communications Cloud. C
   <span id="email-error" style="color: red; display: none; margin-top: 5px; font-size: 14px;">Please enter a valid business email address.</span>
 </div>
 
+<div style="margin-top: 20px; margin-bottom: 20px;">
+  <label style="font-weight: bold;">Use Case:</label>
+  <div style="margin-top: 5px;">
+    <label style="margin-right: 20px;"><input type="radio" name="use-case" value="Learning" style="margin-right: 5px;" checked>Learning</label>
+    <label style="margin-right: 20px;"><input type="radio" name="use-case" value="Evaluating" style="margin-right: 5px;">Evaluating</label>
+    <label><input type="radio" name="use-case" value="Implementing" style="margin-right: 5px;">Implementing</label>
+  </div>
+</div>
+
 <a href="#" class="button button--primary" onclick="handleTrialSubmit(event)">
     Start Free Trial
 </a>
@@ -37,6 +46,7 @@ To begin, we will sign up for a free trial of Salesforce Communications Cloud. C
   <input type="hidden" name="lead_source" value="cpqdevelopers.com/free-revenue-cloud-trial">
   <input type="hidden" id="lead-email" name="email" value="">
   <input type="hidden" id="lead-country" name="country" value="">
+  <input type="hidden" id="lead-use-case" name="00NVt00000ElZWx" value="">
 </form>
 <iframe name="hidden_iframe" style="display:none;"></iframe>
 
@@ -136,9 +146,13 @@ Your trial org is now ready to go! Keep in mind that it will expire after 30 day
     emailError.style.display = 'none';
     emailInput.style.borderColor = '';
 
-    // Set the email and country in the hidden form
+    // Get the selected use case
+    const useCase = document.querySelector('input[name="use-case"]:checked').value;
+
+    // Set the email, country, and use case in the hidden form
     document.getElementById('lead-email').value = email;
     document.getElementById('lead-country').value = visitorCountry;
+    document.getElementById('lead-use-case').value = useCase;
 
     // Submit the Web-to-Lead form
     document.getElementById('web-to-lead-form').submit();
