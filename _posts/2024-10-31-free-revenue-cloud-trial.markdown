@@ -26,35 +26,6 @@ To begin, we will sign up for a free trial of Salesforce Communications Cloud. C
   <span id="email-error" style="color: red; display: none; margin-top: 5px; font-size: 14px;">Please enter a valid business email address.</span>
 </div>
 
-<div style="margin-top: 20px; margin-bottom: 20px;">
-  <label style="font-weight: bold;">Use Case:</label>
-  <div class="use-case-options">
-    <label><input type="radio" name="use-case" value="Learning" checked>Learning</label>
-    <label><input type="radio" name="use-case" value="Evaluating">Evaluating</label>
-    <label><input type="radio" name="use-case" value="Implementing">Implementing</label>
-  </div>
-</div>
-
-<style>
-  .use-case-options {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px 20px;
-    margin-top: 5px;
-  }
-  .use-case-options label {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-  }
-  @media (max-width: 576px) {
-    .use-case-options {
-      flex-direction: column;
-      gap: 10px;
-    }
-  }
-</style>
-
 <a href="#" class="button button--primary" onclick="handleTrialSubmit(event)">
     Start Free Trial
 </a>
@@ -66,7 +37,6 @@ To begin, we will sign up for a free trial of Salesforce Communications Cloud. C
   <input type="hidden" name="lead_source" value="cpqdevelopers.com/free-revenue-cloud-trial">
   <input type="hidden" id="lead-email" name="email" value="">
   <input type="hidden" id="lead-country" name="country" value="">
-  <input type="hidden" id="lead-use-case" name="00NVt00000ElZWx" value="">
 </form>
 <iframe name="hidden_iframe" style="display:none;"></iframe>
 
@@ -165,14 +135,10 @@ Your trial org is now ready to go! Keep in mind that it will expire after 30 day
     // Hide error if previously shown
     emailError.style.display = 'none';
     emailInput.style.borderColor = '';
-
-    // Get the selected use case
-    const useCase = document.querySelector('input[name="use-case"]:checked').value;
-
-    // Set the email, country, and use case in the hidden form
+    
+    // Set the email, country in the hidden form
     document.getElementById('lead-email').value = email;
     document.getElementById('lead-country').value = visitorCountry;
-    document.getElementById('lead-use-case').value = useCase;
 
     // Submit the Web-to-Lead form
     document.getElementById('web-to-lead-form').submit();
