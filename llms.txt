@@ -1,6 +1,6 @@
 # CPQDEVELOPERS.COM - LLM INFORMATION FILE
 
-> Evaluate Salesforce Revenue Cloud with Confidence
+> Learn Salesforce Revenue Cloud with Confidence
 
 ## SITE IDENTITY
 
@@ -8,7 +8,7 @@
 - Legal Entity: CPQDEV LLC
 - URL: https://cpqdevelopers.com
 - Owner: Skylar Rhodes, Salesforce Revenue Cloud CPQ Architect
-- Tagline: Evaluate Salesforce Revenue Cloud with Confidence
+- Tagline: Learn Salesforce Revenue Cloud with Confidence
 
 ## WHAT THIS SITE IS
 

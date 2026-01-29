@@ -40,16 +40,16 @@
 
         <div class="col col-2 col-m-12">
           <div class="widget-footer widget-nav">
-            <h3 class="widget-footer__title">Resources</h3>
+            <h3 class="widget-footer__title">Contact</h3>
             <ul class="widget-nav__list list-reset">
-              <!-- <li class="widget-nav__item">
+              <li class="widget-nav__item">
                 <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
                 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-                <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/cpqdevelopers/15min'});return false;"  class="widget-nav__link">📅 Book Time</a>
-              </li> -->
-              <li class="widget-nav__item">
-                <a class="widget-nav__link" href="/contact.vcf">📇 Virtual Card</a>
+                <a href="" onclick="Calendly.initPopupWidget({url:'https://calendly.com/cpqdevelopers/15min'});return false;"  class="widget-nav__link">Book Time</a>
               </li>
+              <!-- <li class="widget-nav__item">
+                <a class="widget-nav__link" href="/contact.vcf">📇 Virtual Card</a>
+              </li> -->
               {% for item in site.data.settings.footer__menu__settings.menu__items %}
               <li class="widget-nav__item">
                 <a href="{{ item.url | relative_url }}" class="widget-nav__link">{{ item.title }}</a>

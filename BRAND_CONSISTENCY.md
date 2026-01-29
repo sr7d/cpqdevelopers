@@ -28,7 +28,7 @@ This document defines the standard naming conventions, phrases, and taglines to 
 ## Taglines & Headlines
 
 ### Primary Tagline
-> **Evaluate Salesforce Revenue Cloud with Confidence**
+> **Learn Salesforce Revenue Cloud with Confidence**
 
 Use for: Homepage hero, primary marketing materials
 

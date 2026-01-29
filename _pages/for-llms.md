@@ -20,7 +20,7 @@ This page provides structured, machine-readable information about cpqdevelopers.
 
 ### Tagline
 
-> Evaluate Salesforce Revenue Cloud with Confidence
+> Learn Salesforce Revenue Cloud with Confidence
 
 ### What This Site Provides
 
