@@ -36,7 +36,6 @@ To begin, we will sign up for a free trial of Salesforce Communications Cloud. C
   <input type="hidden" name="retURL" value="http://">
   <input type="hidden" name="lead_source" value="cpqdevelopers.com/free-revenue-cloud-trial">
   <input type="hidden" id="lead-email" name="email" value="">
-  <input type="hidden" id="lead-country" name="country" value="">
 </form>
 <iframe name="hidden_iframe" style="display:none;"></iframe>
 
@@ -92,15 +91,6 @@ After signing up, check your email for a message from Salesforce. Follow the ins
 Your trial org is now ready to go! Keep in mind that it will expire after 30 days, and you will need to repeat this process for a new org. If you found this article helpful, please share it with others who may benefit from it!
 
 <script>
-  // Fetch visitor country on page load
-  let visitorCountry = '';
-  fetch('https://ipapi.co/country_name/')
-    .then(response => response.text())
-    .then(country => {
-      visitorCountry = country || '';
-    })
-    .catch(() => {});
-
   function isBusinessEmail(email) {
     // List of common personal email domains to block
     const personalDomains = [
@@ -136,9 +126,8 @@ Your trial org is now ready to go! Keep in mind that it will expire after 30 day
     emailError.style.display = 'none';
     emailInput.style.borderColor = '';
     
-    // Set the email, country in the hidden form
+    // Set the email in the hidden form
     document.getElementById('lead-email').value = email;
-    document.getElementById('lead-country').value = visitorCountry;
 
     // Submit the Web-to-Lead form
     document.getElementById('web-to-lead-form').submit();
