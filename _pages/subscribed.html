@@ -8,15 +8,16 @@ image_caption:
 hide_subscribe: true
 ---
 
+<p><em>Using an ad blocker? <a id="manual-subscribe" href="https://hooks.zapier.com/hooks/catch/15224114/uld7fir/" target="_blank">Click here to manually subscribe</a>.</em></p>
+
 <script>
   const params = new URLSearchParams(window.location.search);
   const email = params.get('email');
 
   if (email) {
-    fetch(`https://hooks.zapier.com/hooks/catch/15224114/uld7fir/?email=${encodeURIComponent(email)}`, {
-      method: "GET",
-      mode: "no-cors"
-    });
+    const url = `https://hooks.zapier.com/hooks/catch/15224114/uld7fir/?email=${encodeURIComponent(email)}`;
+    document.getElementById('manual-subscribe').href = url;
+    fetch(url, { method: "GET", mode: "no-cors" });
   }
 </script>
 
