@@ -1,0 +1,42 @@
+---
+layout: page
+title: Thanks for Subscribing ✅ 
+description: "Your subscription to the <em>'Learn Revenue Cloud'</em> newsletter is confirmed, so feel free to explore some previous posts or reach out with questions, and thanks again for joining!"
+permalink: /subscribed/
+image:
+image_caption:
+hide_subscribe: true
+---
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const email = params.get('email');
+
+  if (email) {
+    fetch(`https://hooks.zapier.com/hooks/catch/15224114/uld7fir/?email=${encodeURIComponent(email)}`, {
+      method: "GET",
+      mode: "no-cors"
+    });
+  }
+</script>
+
+</div>
+  </article>
+</div>
+
+<div class="container animate">
+  <div class="row">
+    <div class="col col-12">
+      <h3>Revenue Cloud Posts</h3>
+    </div>
+  </div>
+  <div class="row">
+    {% for post in site.tags['revenue-cloud'] %}
+      {% include article.html %}
+    {% endfor %}
+  </div>
+</div>
+
+<div style="display:none;">
+  <article>
+    <div>
