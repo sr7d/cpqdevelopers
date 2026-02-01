@@ -6,10 +6,13 @@ date: 2023-08-18 15:01:35 +0300
 author: admin
 image: /images/MDQPopulateSegments.png
 image_caption: 
-tags: [cpq,multi-dimensional-quoting,code]
+tags: [legacy-cpq,multi-dimensional-quoting,code]
 featured:
-video_embed: 
+video_embed:
 ---
+
+{% include cpq-legacy-notice.html %}
+
 # How to Populate Values Across MDQ Segments to Reduce Data Entry
 
 In the world of Configure, Price, Quote (CPQ) and Multi-Dimensional Quoting (MDQ), managing multiple segments for a product can be a challenging task. With each segment representing a different term or dimension, data entry can become cumbersome, prone to errors, and time-consuming. Fortunately, there's a solution – you can conditionally populate values across segments to streamline the process and ensure accuracy. In this article, we'll show you how to make the most of MDQ by intelligently populating values across segments in the Quote Line Editor (QLE).

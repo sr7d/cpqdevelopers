@@ -6,10 +6,13 @@ date: 2023-08-18 15:01:35 +0300
 author: admin
 image: /images/PreviewApproval.png
 image_caption: 
-tags: [cpq,code]
+tags: [legacy-cpq,code]
 featured:
-video_embed: 
+video_embed:
 ---
+
+{% include cpq-legacy-notice.html %}
+
 # Preview Advanced Approvals Inside the QLE
 
 With the right configuration, you can empower your users to preview the approvals required for a quote directly within the Quote Line Editor (QLE), eliminating the need to save and return to the quote. In this instructional article, we will guide you through embedding a custom action in the QLE, allowing users to preview approvals immediately after a quick save. Here's how you can achieve this with a VF page, custom action, and apex controller class. Keep in mind that users must also have the appropriate permissions to view the new VF page.

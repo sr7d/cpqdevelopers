@@ -6,7 +6,7 @@ date: 2024-10-31 15:01:35 +0300
 author: mihir_mehta
 image: /images/salesforce_projection.png
 image_caption: 
-tags: [revenue-cloud,cpq]
+tags: [revenue-cloud,legacy-cpq]
 featured:
 video_embed: 
 ---

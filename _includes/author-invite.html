@@ -1,51 +1,146 @@
 <style>
-  @keyframes bounce {
-    0% {
-      transform: translateY(100%);
-    }
-    60% {
-      transform: translateY(-20px);
-      opacity: 1;
-    }
-    80% {
-      transform: translateY(10px);
-    }
-    100% {
-      transform: translateY(0);
-    }  
-  }
     .popup {
-      display: none;
+      display: flex;
       position: fixed;
-      bottom: 20px;
+      bottom: 0;
+      left: 0;
+      right: 0;
       width: 100%;
-      padding: 0px;
+      padding: 6px 12px;
       background-color: hsl(240, 100%, 74%);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
       z-index: 1000;
       text-align: center;
-      margin-bottom: -20px;
-      animation: bounce 0.5s;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: nowrap;
     }
-    #inviteText{
+    #inviteText {
+      display: inline-flex;
+      align-items: center;
+      flex-wrap: nowrap;
+      gap: 8px;
       color: white;
-      font-size: 14px;
+      font-size: 13px;
+      line-height: 1;
+      margin: 0;
+      padding: 0;
     }
-    #inviteBell{
+    #inviteText strong {
+      font-weight: 700;
+    }
+    #inviteBell {
       font-size: 18px;
-      transform:translateY(2px);
+    }
+    /* Combined input + button pill, compact to fit skinny banner */
+    .popup .banner-signup-form {
+      display: inline-flex;
+      align-items: center;
+      position: relative;
+      width: 220px;
+      height: 24px;
+      border-radius: 14px;
+      margin: 0;
+      flex-shrink: 0;
+    }
+    .popup .banner-input {
+      width: 100%;
+      height: 24px;
+      padding: 0 58px 0 8px;
+      margin: 0;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 24px;
+      border: none;
+      outline: 0;
+      border-radius: 14px;
+      color: var(--heading-font-color);
+      background-color: var(--background-color);
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+      box-sizing: border-box;
+      vertical-align: middle;
+    }
+    .popup .banner-input::placeholder {
+      color: var(--text-alt-color);
+    }
+    .popup .banner-input:focus {
+      box-shadow: 0 0 0 1px var(--white), inset 0 0 0 1px var(--primary-color);
+    }
+    .popup .banner-button {
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      height: 20px;
+      padding: 0 8px;
+      margin: 0;
+      font-size: 11px;
+      font-weight: 700;
+      line-height: 20px;
+      text-decoration: none;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      transition: all .25s;
+      color: var(--white);
+      background: var(--dark);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .popup .banner-button:hover {
+      background: var(--button-background-hover);
     }
   </style>
 
+  <form id="banner-web-to-lead-form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00Da500001Nhn69" method="POST" target="banner_hidden_iframe" style="display:none;">
+    <input type="hidden" name="oid" value="00Da500001Nhn69">
+    <input type="hidden" name="retURL" value="http://">
+    <input type="hidden" name="lead_source" value="cpqdevelopers.com/free-revenue-cloud-trial">
+    <input type="hidden" id="banner-lead-email" name="email" value="">
+  </form>
+  <iframe name="banner_hidden_iframe" style="display:none;"></iframe>
+
   <div id="contributePopup" class="popup">
-    <span id="inviteText"><i id="inviteBell" class="ion ion-ios-notifications-outline"></i> Subscribe <a href="http://eepurl.com/iXG4gA">here</a> for updates as new articles post!</span>
+    <span id="inviteText">🔥 Free Revenue Cloud Dev Org <span class="banner-signup-form"><input type="email" id="banner-trial-email" name="trial-email" placeholder="your.email@company.com" class="banner-input"> <button type="button" class="banner-button" onclick="handleBannerTrialSubmit(event)">Sign Up</button></span> <span id="banner-email-error" style="display: none; color: rgba(255,255,255,0.95); font-size: 11px; margin-left: 4px;">Please enter a valid business email.</span></span>
   </div>
 
   <script>
+    function isBusinessEmailBanner(email) {
+      var personalDomains = [
+        'gmail.com', 'yahoo.com', 'hotmail.com', 'outlook.com', 'aol.com',
+        'icloud.com', 'mail.com', 'protonmail.com', 'zoho.com', 'yandex.com',
+        'gmx.com', 'live.com', 'msn.com', 'me.com', 'inbox.com',
+        'yahoo.co.uk', 'hotmail.co.uk', 'gmail.co.uk', 'outlook.co.uk'
+      ];
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) return false;
+      var domain = email.split('@')[1].toLowerCase();
+      return personalDomains.indexOf(domain) === -1;
+    }
 
-    document.addEventListener("DOMContentLoaded", function () {
-      setTimeout(function () {
-        document.getElementById("contributePopup").style.display = "block";
-      }, 90000); // 8 secs
-    });
+    function handleBannerTrialSubmit(event) {
+      event.preventDefault();
+
+      var emailInput = document.getElementById('banner-trial-email');
+      var emailError = document.getElementById('banner-email-error');
+      var email = emailInput ? emailInput.value.trim() : '';
+
+      if (!email || !isBusinessEmailBanner(email)) {
+        if (emailError) emailError.style.display = 'inline';
+        if (emailInput) emailInput.style.borderColor = 'red';
+        return false;
+      }
+
+      if (emailError) emailError.style.display = 'none';
+      if (emailInput) emailInput.style.borderColor = '';
+
+      var leadEmail = document.getElementById('banner-lead-email');
+      var webToLeadForm = document.getElementById('banner-web-to-lead-form');
+      if (leadEmail) leadEmail.value = email;
+      if (webToLeadForm) webToLeadForm.submit();
+
+      window.open('https://trailhead.salesforce.com/promo/orgs/get-started-revenue-cloud', '_blank');
+      return false;
+    }
   </script>

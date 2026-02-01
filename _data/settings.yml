@@ -1,8 +1,8 @@
 #-------------------------------
 # Site Settings
-title: Salesforce Revenue Cloud & CPQ Contractor Services
+title: Master Salesforce Revenue Cloud — the future of CPQ
 # logo: /images/logo.png
-description: Get specialized, Salesforce Revenue Cloud CPQ expertise for your projects. Explore the case studies and other articles below, or Book Time for us to make an introduction!
+description: Revenue Cloud tutorials, migration guides, and legacy CPQ reference - from experienced architects.
 
 
 #-------------------------------
@@ -42,8 +42,9 @@ menu__settings:
 #-------------------------------
 # Hero Settings
 hero:
-  hero__title: Learn Salesforce Revenue Cloud <br>with Confidence
-  hero__description: Get expert guidance, set up your trial, and gain <em>CPQ-to-Revenue Cloud</em> migration insights.
+  hero__title: Master Salesforce Revenue Cloud<br>the future of CPQ
+  hero__description: Revenue Cloud tutorials, migration guides, and legacy CPQ reference - from experienced architects.
+  hero__notice: "<strong>March 2025:</strong> Salesforce CPQ reached End of Sale. This site covers both Revenue Cloud (current), CPQ (legacy maintenance), and migration."
 #-------------------------------
 # Blog Settings
 blog:
@@ -55,7 +56,7 @@ blog:
 # Recommended Tag Settings
 tag:
   enable: true
-  tag__title: Featured Revenue Cloud Articles
+  tag__title: Featured Articles
   tag__name: revenue-cloud
 
 
@@ -63,8 +64,8 @@ tag:
 # Newsletter Settings (Buttondown)
 newsletter:
   enable: true
-  title: Join hundreds of trailblazers learning revenue cloud
-  description: In this newsletter I share with you what's new in the world of Salesforce Revenue & CPQ, with content for everyone, from beginners to pros.
+  title: Join hundreds of Salesforce professionals transitioning to Revenue Cloud
+  description: Get the latest on Revenue Cloud features, CPQ migration strategies, and developer tips - from beginners to architects.
   input_text: Your Email Address...
   button_text: Subscribe
   background_image: "/images/110.jpg"
@@ -77,7 +78,7 @@ newsletter:
 footer__menu__settings:
   menu__items: 
       - url: '/Contact/'
-        title: 'Contact Form'     
+        title: '📧 Contact Form'     
 
 
 # Social Links

@@ -6,10 +6,13 @@ date: 2023-08-18 15:01:35 +0300
 author: admin
 image: /images/SearchFilter.png
 image_caption: 
-tags: [cpq,search-filters]
+tags: [legacy-cpq,search-filters]
 featured:
-video_embed: 
+video_embed:
 ---
+
+{% include cpq-legacy-notice.html %}
+
 # How to Limit Adding Specific Products to Your Quote by Account
 
 Managing product availability for different types of accounts is a common request, often not all accounts are eligible for the same products. 

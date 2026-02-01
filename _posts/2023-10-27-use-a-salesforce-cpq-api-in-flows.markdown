@@ -6,10 +6,13 @@ date: 2023-10-27 15:01:35 +0300
 author: admin
 image: /images/SalesforceAmenderApiInvoke.png
 image_caption: 
-tags: [cpq,code,flow,api]
+tags: [legacy-cpq,code,flow,api]
 featured:
-video_embed: 
+video_embed:
 ---
+
+{% include cpq-legacy-notice.html %}
+
 # Use a Salesforce CPQ API in Flows
 
 Many organizations encounter the need to extend Salesforce CPQ's functionality beyond its standard user interface. One common request is to enable the amendment of contracts, a process similar to generating contract renewals. Unlike the streamlined renewal process, CPQ doesn't provide a built-in option to initiate an amendment quote and opportunity with a simple checkbox on contracts. Customers also look for the flexibility to handle bulk amendments, manage amendments through a portal, or initiate them programmatically via Apex code.
@@ -81,3 +84,9 @@ With these three steps, you'll have a practical solution for amending contracts 
 ## What About Other CPQ APIs?
 
 If you're interested in exploring other CPQ APIs and functionality, you can access a comprehensive Postman collection provided by Salesforce [**here**](https://www.postman.com/salesforce-developers/workspace/salesforce-developers/folder/12721794-18c19817-3a82-4403-92bc-d96276452c77). This collection allows you to explore and interact with various CPQ APIs, making it a valuable resource for extending your Salesforce CPQ capabilities further.
+
+## Revenue Cloud Equivalent
+
+Revenue Cloud uses **Connect REST APIs** instead of the legacy CPQ Calculator API. The architecture is fundamentally different — Revenue Cloud APIs are built on Salesforce's modern Connect framework, offering better performance and native integration with Flows.
+
+For a complete guide to Revenue Cloud APIs, see: [Revenue Cloud API Tutorial — A Developer's Guide](/revenue-cloud-api-tutorial/)

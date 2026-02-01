@@ -6,10 +6,13 @@ date: 2023-08-18 15:01:35 +0300
 author: admin
 image: /images/FavoriteGroups.png
 image_caption: 
-tags: [cpq,best-practices]
+tags: [legacy-cpq,best-practices]
 featured:
-video_embed: 
+video_embed:
 ---
+
+{% include cpq-legacy-notice.html %}
+
 # Add a Collection of Products Through Favorites
 
 You're probably familiar with the concept of favoriting individual products to simplify your quoting process. But did you know that you can also create collections of favorite products and make them easily accessible in the Quote Line Editor (QLE)? In this blog post, we'll explore how you can leverage this powerful feature to enhance your CPQ experience.
@@ -44,4 +47,10 @@ If you're an admin in your Salesforce instance, you have the ability to share th
 
 2. **Grant Access to a User:** Once you've added the appropriate records, the selected users will have access to the favorite group in their QLE. This ensures that your team can work efficiently and consistently when creating quotes with shared collections of favorite products.
 
-In conclusion, Salesforce CPQ offers a powerful feature that allows you to create collections of favorite products and streamline your quoting process. By following the steps outlined in this blog post, you can boost your productivity, reduce errors, and ensure that your team has access to the same set of favorite products when creating quotes. 
+In conclusion, Salesforce CPQ offers a powerful feature that allows you to create collections of favorite products and streamline your quoting process. By following the steps outlined in this blog post, you can boost your productivity, reduce errors, and ensure that your team has access to the same set of favorite products when creating quotes.
+
+## Revenue Cloud Equivalent
+
+In Salesforce Revenue Cloud, similar functionality is achieved through **Product Bundles** with saved configurations. Revenue Cloud's Product Configurator provides a more modern approach to bundling products with built-in validation rules and pricing.
+
+To learn how bundles work in Revenue Cloud, see: [How to Create a Product Bundle in Salesforce Revenue Cloud](/how-to-create-a-product-bundle-in-salesforce-revenue-cloud/) 

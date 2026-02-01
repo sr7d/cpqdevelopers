@@ -6,10 +6,13 @@ date: 2023-10-19 15:01:35 +0300
 author: admin
 image: /images/PriceRuleLogging.png
 image_caption: 
-tags: [cpq,logging,video-guides]
+tags: [legacy-cpq,logging,video-guides]
 featured:
 video_embed: https://www.youtube.com/embed/HpF29uJwdyg?si=xWgBwcXxSRBjQ2YG
 ---
+
+{% include cpq-legacy-notice.html %}
+
 # Salesforce Logging for Price Rules in CPQ: A Step-by-Step Guide
 
 Price rules play a vital role in this process, and tracking their behavior is essential. In this article, I'll walk you through the process of implementing Salesforce logging for price rules in CPQ. This approach involves using a rich text field, creating a new price rule action, building a flow for each new action, and updating the Lightning page for a comprehensive solution.
@@ -92,3 +95,9 @@ To access the logged information easily, you should consider updating your Light
 # Simplify with an Unmanaged Package
 
 If you find the process of implementing price rule logging complex or time-consuming, I've created an ***[Unmanaged Package (click here to install)](https://login.salesforce.com/packaging/installPackage.apexp?p0=04tHs000000hKkd)*** that contains the necessary components and configurations to do this for you on all new price rules, however you will still need to dataload actions for existing price rules. If your org is using a custom domain you will need to replace "login.salesforce.com" with your orgs domain name, or to install it in a sanbox replace it with "test.salesforce.com" or the sandboxes domain name.
+
+## Revenue Cloud Equivalent
+
+Revenue Cloud uses **Pricing Procedures** instead of CPQ Price Rules. Pricing Procedures have built-in debug logging capabilities through the Expression Set framework, making it easier to trace pricing calculations without custom solutions.
+
+For an overview of Revenue Cloud's pricing architecture and setup, see: [Salesforce Revenue Cloud Setup Guide](/salesforce-revenue-cloud-setup-guide/)

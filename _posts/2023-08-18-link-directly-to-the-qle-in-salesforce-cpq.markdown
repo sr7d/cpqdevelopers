@@ -6,10 +6,13 @@ date: 2023-08-18 15:01:35 +0300
 author: admin
 image: /images/QLELinks.png
 image_caption: 
-tags: [cpq,quote-line-editor]
+tags: [legacy-cpq,quote-line-editor]
 featured:
-video_embed: 
+video_embed:
 ---
+
+{% include cpq-legacy-notice.html %}
+
 # Provide Links Directly to and from the Quote Line Editor
 
 In this blog post, we'll describe how to create links to and from the Quote Line Editor through hyperlink formulas, redirects, links within screen flows, and more.
