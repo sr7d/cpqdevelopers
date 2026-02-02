@@ -1,8 +1,8 @@
 #-------------------------------
 # Site Settings
-title: Master Salesforce Revenue Cloud — the future of CPQ
+title: CPQ Developers — Salesforce Revenue Cloud & CPQ
 # logo: /images/logo.png
-description: Revenue Cloud tutorials, migration guides, and legacy CPQ reference - from experienced architects.
+description: This site documents real-world Salesforce CPQ and Revenue Cloud implementations.
 
 
 #-------------------------------
@@ -21,18 +21,8 @@ menu__settings:
       submenu:
       - url: 'https://silkquote.com'
         title: 'SilkQuote'      
-    - title: 'Resources'
-      submenu:
-      - url: '/data-deployment-script-generator/'
-        title: 'Data Deployment Script Generator'  
-      - url: '/cpq-price-waterfall-calculator/'
-        title: 'CPQ Price Waterfall'
-      - url: '/salesforce-cpq-data-model/'
-        title: 'CPQ Primary Objects'
-      - url: '/salesforce-revenue-cloud-data-model/'
-        title: 'Revenue Cloud Data Model'
-      - url: '/user-product-filters/'
-        title: 'CPQ User Product Filters'        
+    - title: 'Services'
+      url: '/services/'
     - title: 'Authors'
       url: '/authors/'
     - title: 'Contact'
@@ -42,8 +32,8 @@ menu__settings:
 #-------------------------------
 # Hero Settings
 hero:
-  hero__title: Master Salesforce Revenue Cloud<br>the future of CPQ
-  hero__description: Revenue Cloud tutorials, migration guides, and legacy CPQ reference - from experienced architects.
+  hero__title: Salesforce Revenue Cloud &amp; CPQ
+  hero__description: Real-world architecture, performance remediation, and enterprise migrations.
   hero__notice: "<strong>March 2025:</strong> Salesforce CPQ reached End of Sale. This site covers both Revenue Cloud (current), CPQ (legacy maintenance), and migration."
 #-------------------------------
 # Blog Settings
@@ -64,8 +54,8 @@ tag:
 # Newsletter Settings (Buttondown)
 newsletter:
   enable: true
-  title: Join hundreds of Salesforce professionals transitioning to Revenue Cloud
-  description: Get the latest on Revenue Cloud features, CPQ migration strategies, and developer tips - from beginners to architects.
+  title: Learn Revenue Cloud
+  description: Join hundreds of trailblazers getting the latest on Revenue Cloud features, CPQ migration strategies, and developer tips.
   input_text: Your Email Address...
   button_text: Subscribe
   background_image: "/images/110.jpg"

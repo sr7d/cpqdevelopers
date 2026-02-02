@@ -1,47 +1,100 @@
 ---
-layout: page
+layout: post
 title: Data Deployment Script Generator
-description: This tool allows you to create a reusable data deployment script using anonymous apex. Follow these steps to create your script
+description: This tool allows you to create a reusable data deployment script using anonymous apex. Follow these steps to create your script.
+date: 2024-06-15 10:00:00 +0300
+author: admin
+image: /images/scriptGenerator.png
+hide_image: true
+image_caption:
+tags: [tools, legacy-cpq, revenue-cloud]
+featured:
+video_embed:
 permalink: /data-deployment-script-generator/
 ---
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
 
 <style>
-  textarea {
-    width: 100%;
-    height: 200px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 14px;
-    height: 300px;
+  .generator-steps {
+    background: var(--secondary-color, #F6F9FC);
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 24px;
   }
-  #outputText{
-    background: linear-gradient(to bottom, #CACBCD, #F6F9FC);
-    color: white;
+  .generator-steps ol {
+    margin: 0;
+    padding-left: 24px;
+  }
+  .generator-steps li {
+    padding: 8px 0;
+    line-height: 1.6;
+  }
+  .generator-steps a {
+    color: var(--primary-color, #A82D5B);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
+  }
+  .generator-steps a:hover {
+    border-bottom-color: var(--primary-color, #A82D5B);
+  }
+  .input-container {
+    margin-bottom: 16px;
+  }
+  #jsonInput {
+    width: 100%;
+    height: 280px;
+    padding: 16px;
+    border: 2px solid var(--border-color, #eee);
+    border-radius: 12px;
+    font-size: 14px;
+    font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace;
+    background: var(--white, #fff);
+    transition: border-color 0.2s, box-shadow 0.2s;
+    resize: vertical;
+  }
+  #jsonInput:focus {
+    outline: none;
+    border-color: var(--primary-color, #A82D5B);
+    box-shadow: 0 0 0 3px rgba(168, 45, 91, 0.1);
+  }
+  .button-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 16px;
+  }
+  #copied {
+    color: #03b800;
+    font-weight: 600;
+  }
+  #outputContainer {
+    margin-top: 24px;
+  }
+  #outputText {
+    background: #282c34;
+    color: #abb2bf;
+    border-radius: 12px;
+    padding: 20px;
+    font-size: 13px;
+    line-height: 1.5;
+    overflow-x: auto;
     max-height: 500px;
   }
 </style>
-
-<div class="container">
-  <ol>
-    <li>Query data from Salesforce using <a href="https://chromewebstore.google.com/detail/salesforce-inspector-relo/hpijlohoihegkfehhibggnkbjhoemldh" target="_blank" rel="noopener noreferrer">Salesforce Inspector Reloaded</a></li>
-    <li>Copy the results as JSON</li>
-    <li>Paste the JSON below to generate Apex code for deploying that data in a target org</li>
-    <li>Deploy the generated Apex code via <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">VSCode</a>, <a href="https://workbench.developerforce.com/" target="_blank" rel="noopener noreferrer">Workbench</a>, or the Developer Console</li>
-  </ol>  
-
-  <button class="button button--primary" onclick="generateScript()">Generate</button>
-  <button class="button button--primary" onclick="copyToClipboard()" style="display: none">&nbsp;&nbsp;Copy&nbsp;&nbsp;</button>
-  <span id="copied" style="display: none;">&nbsp;✅ Copied!</span>
-  <br>
-  <br>
-  <textarea id="jsonInput" placeholder="Paste your JSON here..."></textarea>
+<div class="input-container">
+  <textarea id="jsonInput" placeholder="Query data from Salesforce using Salesforce Inspector. Copy and paste it here."></textarea>
 </div>
 
-<div id="outputContainer" class="output" style="display: none;">
+<div class="button-row">
+  <button class="button button--primary" onclick="generateScript()">Generate Apex</button>
+  <button class="button button--primary" onclick="copyToClipboard()" style="display: none;">Copy to Clipboard</button>
+  <span id="copied" style="display: none;">Copied!</span>
+  <br>
+</div>
+
+<div id="outputContainer" style="display: none;">
   <pre id="outputText" class="language-apex"></pre>
 </div>
 

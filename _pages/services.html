@@ -1,0 +1,409 @@
+---
+layout: page
+title: Services
+description: I help enterprises untangle complex Salesforce CPQ implementations and architect Revenue Cloud solutions.
+permalink: /services/
+image:
+image_caption:
+---
+
+<style>
+  /* Hero intro */
+  .services-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 64px;
+  }
+  .services-intro p {
+    font-size: 20px;
+    line-height: 1.7;
+    color: var(--gray);
+  }
+
+  /* Stats bar */
+  .stats-bar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 64px;
+    padding: 32px;
+    background: var(--dark);
+    border-radius: 16px;
+  }
+  .stat-item {
+    text-align: center;
+  }
+  .stat-number {
+    font-size: 42px;
+    font-weight: 800;
+    color: var(--white);
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  .stat-label {
+    font-size: 14px;
+    color: rgba(255,255,255,0.7);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  @media (max-width: 768px) {
+    .stats-bar {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+  }
+
+  /* Services grid */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 64px;
+  }
+  @media (max-width: 1024px) {
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  .service-card {
+    background: var(--white);
+    border: 1px solid var(--border-color, #eee);
+    border-radius: 16px;
+    padding: 32px;
+    transition: box-shadow 0.3s, transform 0.3s;
+  }
+  .service-card:hover {
+    box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+    transform: translateY(-4px);
+  }
+  .service-icon {
+    width: 48px;
+    height: 48px;
+    background: var(--primary-color);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .service-icon svg {
+    width: 24px;
+    height: 24px;
+    fill: white;
+  }
+  .service-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: var(--dark);
+  }
+  .service-card p {
+    color: var(--gray);
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+  }
+
+  /* Section headers */
+  .section-header {
+    margin-bottom: 40px;
+  }
+  .section-header h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+  }
+  .section-header p {
+    color: var(--dark-gray);
+    font-size: 18px;
+    max-width: 600px;
+  }
+
+  /* Engagements - full width cards */
+  .engagements-list {
+    margin-bottom: 64px;
+  }
+  .engagement-card {
+    background: linear-gradient(135deg, var(--secondary-color) 0%, #fff 100%);
+    border: 1px solid var(--border-color, #eee);
+    border-radius: 16px;
+    padding: 32px;
+    margin-bottom: 24px;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 32px;
+  }
+  @media (max-width: 768px) {
+    .engagement-card {
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+  }
+  .engagement-featured {
+    border: 2px solid var(--primary-color);
+    position: relative;
+  }
+  .engagement-featured::before {
+    content: 'Most Common';
+    position: absolute;
+    top: -12px;
+    left: 24px;
+    background: var(--primary-color);
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 4px 12px;
+    border-radius: 4px;
+  }
+  .engagement-meta {
+    border-right: 1px solid var(--border-color, #eee);
+    padding-right: 32px;
+  }
+  @media (max-width: 768px) {
+    .engagement-meta {
+      border-right: none;
+      border-bottom: 1px solid var(--border-color, #eee);
+      padding-right: 0;
+      padding-bottom: 24px;
+    }
+  }
+  .engagement-icon {
+    width: 56px;
+    height: 56px;
+    background: var(--white);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .engagement-icon svg {
+    width: 28px;
+    height: 28px;
+    stroke: var(--primary-color);
+  }
+  .engagement-meta h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+    color: var(--dark);
+    line-height: 1.3;
+  }
+  .engagement-subtitle {
+    font-size: 14px;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin: 0;
+  }
+  .engagement-content p {
+    color: var(--gray);
+    line-height: 1.7;
+    margin: 0 0 24px 0;
+    font-size: 16px;
+  }
+  .engagement-benefits {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  @media (max-width: 768px) {
+    .engagement-benefits {
+      grid-template-columns: 1fr;
+    }
+  }
+  .engagement-benefits li {
+    position: relative;
+    padding-left: 24px;
+    font-size: 15px;
+    color: var(--dark);
+  }
+  .engagement-benefits li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 10px;
+    height: 10px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    opacity: 0.7;
+  }
+
+  /* Not a fit section */
+  .not-a-fit {
+    background: var(--secondary-color);
+    border-radius: 16px;
+    padding: 32px;
+    margin-bottom: 64px;
+  }
+  .not-a-fit h3 {
+    font-size: 18px;
+    color: var(--dark-gray);
+    margin-bottom: 16px;
+  }
+  .not-a-fit ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 16px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .not-a-fit li {
+    background: var(--white);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: var(--dark-gray);
+  }
+  .not-a-fit p {
+    color: var(--dark-gray);
+    font-size: 15px;
+    margin: 0;
+  }
+
+  /* CTA */
+  .services-cta {
+    background: var(--dark);
+    border-radius: 16px;
+    padding: 48px;
+    text-align: center;
+  }
+  .services-cta p {
+    color: rgba(255,255,255,0.9);
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto 24px;
+  }
+  .services-cta .cta-link {
+    display: inline-block;
+    color: var(--white);
+    font-weight: 600;
+    text-decoration: none;
+    padding: 14px 28px;
+    border: 2px solid rgba(255,255,255,0.3);
+    border-radius: 8px;
+    transition: all 0.2s;
+  }
+  .services-cta .cta-link:hover {
+    background: var(--white);
+    color: var(--dark);
+  }
+</style>
+<div class="stats-bar">
+  <div class="stat-item">
+    <div class="stat-number">10+</div>
+    <div class="stat-label">Years CPQ Experience</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-number">50+</div>
+    <div class="stat-label">Enterprise Implementations</div>
+  </div>
+  <div class="stat-item">
+    <div class="stat-number">$2B+</div>
+    <div class="stat-label">Revenue Processed</div>
+  </div>
+</div>
+
+<div class="section-header">
+  <h2>Areas of Expertise</h2>
+</div>
+
+<div class="services-grid">
+  <div class="service-card">
+    <div class="service-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+    </div>
+    <h3>Revenue Cloud Architecture</h3>
+    <p>End-to-end design for organizations moving to Salesforce's modern quoting and billing platform. Data modeling, pricing strategy, product catalog structure, and integration patterns.</p>
+  </div>
+
+  <div class="service-card">
+    <div class="service-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+    </div>
+    <h3>CPQ Performance Remediation</h3>
+    <p>Diagnosis and resolution of slow quote calculations, pricing rule inefficiencies, and QCP bottlenecks in legacy Salesforce CPQ implementations.</p>
+  </div>
+
+  <div class="service-card">
+    <div class="service-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 3H5a2 2 0 00-2 2v3m18 0V5a2 2 0 00-2-2h-3m0 18h3a2 2 0 002-2v-3M3 16v3a2 2 0 002 2h3"/></svg>
+    </div>
+    <h3>Enterprise CPQ Migrations</h3>
+    <p>Migration of complex CPQ configurations to Revenue Cloud with minimal business disruption. Legacy data mapping, parallel testing, and phased rollouts.</p>
+  </div>
+</div>
+
+<div class="section-header">
+  <h2>Engagement Models</h2>
+  <p>Flexible arrangements based on your needs</p>
+</div>
+
+<div class="engagements-list">
+  <div class="engagement-card engagement-featured">
+    <div class="engagement-meta">
+      <div class="engagement-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+      </div>
+      <h3>Project Oversight</h3>
+      <p class="engagement-subtitle">Your technical advocate during partner implementations</p>
+    </div>
+    <div class="engagement-content">
+      <p>When you're working with a Salesforce partner or SI, having an independent expert validate their proposed architecture can prevent costly mistakes. I review solution designs, challenge assumptions, identify risks, and ensure what's being built will actually scale.</p>
+      <ul class="engagement-benefits">
+        <li>Architecture and solution design review</li>
+        <li>Risk identification before they become problems</li>
+        <li>Someone in your corner during technical discussions</li>
+        <li>Avoid rebuilding what was built wrong the first time</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="engagement-card">
+    <div class="engagement-meta">
+      <div class="engagement-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      </div>
+      <h3>Retainers & Staff Augmentation</h3>
+      <p class="engagement-subtitle">Ongoing expertise when you need it</p>
+    </div>
+    <div class="engagement-content">
+      <p>For organizations that need consistent access to deep CPQ/Revenue Cloud expertise without a full-time hire. Embedded with your team on a fractional basis or available on-call for technical guidance.</p>
+      <ul class="engagement-benefits">
+        <li>Predictable monthly availability</li>
+        <li>Faster response than finding new contractors</li>
+        <li>Continuity across multiple initiatives</li>
+        <li>Knowledge transfer to your team</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="engagement-card">
+    <div class="engagement-meta">
+      <div class="engagement-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+      </div>
+      <h3>Custom Projects</h3>
+      <p class="engagement-subtitle">Scoped engagements for specific outcomes</p>
+    </div>
+    <div class="engagement-content">
+      <p>Defined-scope projects with clear deliverables. Performance audits, migration planning, architecture design, or hands-on implementation work. Fixed timeline, fixed outcome.</p>
+      <ul class="engagement-benefits">
+        <li>Clear scope and deliverables upfront</li>
+        <li>Architecture documents you can execute against</li>
+        <li>Hands-on build work when needed</li>
+        <li>Knowledge transfer included</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="services-cta">
+  <p>If you're evaluating Salesforce Revenue Cloud or dealing with a CPQ implementation that isn't performing as expected, let's discuss your situation.</p>
+  <a href="/contact/" class="cta-link">Start a Conversation</a>
+</div>

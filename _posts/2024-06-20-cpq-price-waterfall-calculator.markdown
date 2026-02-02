@@ -1,11 +1,18 @@
 ---
-layout: page
-title: Price Waterfall Calculator
-description: This calculator simulates Salesforce CPQ's pricing waterfall, helping you understand how different elements impact the final Net Price. As you enter values, the calculator shows how discounts work together, just like in CPQ, giving you a clear picture of how adjustments affect pricing at each stage. The price flows from top to bottom.
-permalink: /cpq-price-waterfall-calculator/
-image: 
+layout: post
+title: CPQ Price Waterfall Calculator
+description: This calculator simulates Salesforce CPQ's pricing waterfall, helping you understand how different elements impact the final Net Price. As you enter values, the calculator shows how discounts work together, just like in CPQ, giving you a clear picture of how adjustments affect pricing at each stage.
+date: 2024-06-20 10:00:00 +0300
+author: admin
+image: /images/pricingWaterfall.png
+hide_image: true
 image_caption:
+tags: [tools, legacy-cpq]
+featured:
+video_embed:
+permalink: /cpq-price-waterfall-calculator/
 ---
+
 <style>
     #output {
         font-weight: 1000;
@@ -25,19 +32,19 @@ image_caption:
     }
 
     ol {
-        list-style-type: decimal; /* Ensures ordered list styling */
-        padding-left: 20px; /* Indentation for the list */
+        list-style-type: decimal;
+        padding-left: 20px;
     }
 
     li {
-        margin-bottom: 15px; /* Space between list items */
+        margin-bottom: 15px;
     }
 
     label {
         margin: 10px 0 5px;
         color: #555;
         font-weight: 600;
-        display: block; /* Ensures the label takes full width */
+        display: block;
     }
 
     input {
@@ -46,7 +53,7 @@ image_caption:
         border: 1px solid #ccc;
         font-size: 16px;
         box-sizing: border-box;
-        width: 95%; /* Full width for input fields */
+        width: 95%;
     }
 
     button {
@@ -77,7 +84,8 @@ image_caption:
     }
 
     .net-price-card {
-        margin-top: 20px;
+        margin: 0px 0 0 0;
+        margin-left: 18px;
         padding: 20px;
         background-color: #f8f9fa;
         border: 1px solid #ddd;
@@ -99,17 +107,18 @@ image_caption:
         font-weight: bold;
         color: #03b800;
         text-align: center;
+        width: 100%;
     }
 
     #fork-me-container {
         margin-top: 15px;
-        text-align: center; /* Center text for inline elements */
+        text-align: center;
     }
 
     #fork-me {
-        display: inline-flex; /* Use inline-flex for centering */
-        align-items: center; /* Center icon and text vertically */
-        justify-content: center; /* Center content horizontally */
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
     }
 
 </style>
@@ -123,9 +132,9 @@ image_caption:
                 <label for="listPrice">List Price
                     <span class="info-icon" title="Price pulled from the quote's associated Price Book" style="cursor: pointer;">&#9432;</span>
                 </label>
-                <input type="number" id="listPrice" name="listPrice" step="0.01" placeholder="Start Here 👈" onblur="calculatePrices(this.id)">
+                <input type="number" id="listPrice" name="listPrice" step="0.01" placeholder="Start Here" onblur="calculatePrices(this.id)">
             </li>
-            
+
             <!-- Contracted Price -->
             <li>
                 <label for="contractedPrice" class="optional">Contracted Price
@@ -133,7 +142,7 @@ image_caption:
                 </label>
                 <input type="number" id="contractedPrice" name="contractedPrice" step="0.01" onblur="calculatePrices(this.id)">
             </li>
-    
+
             <!-- Special Price -->
             <li>
                 <label for="specialPrice" class="optional">Special Price
@@ -141,7 +150,7 @@ image_caption:
                 </label>
                 <input type="number" id="specialPrice" name="specialPrice" step="0.01" onblur="calculatePrices(this.id)">
             </li>
-    
+
             <!-- Prorate Multiplier -->
             <li>
                 <label for="prorateMultiplier">Prorate Multiplier
@@ -149,13 +158,13 @@ image_caption:
                 </label>
                 <input type="number" id="prorateMultiplier" name="prorateMultiplier" step="0.01" value="1" onblur="calculatePrices(this.id)">
             </li>
-    
+
             <!-- Prorated Price -->
             <li>
                 <label for="proratedPrice">Prorated Price</label>
                 <input type="number" id="proratedPrice" name="proratedPrice" step="0.01" readonly>
             </li>
-    
+
             <!-- Regular Price -->
             <li>
                 <label for="regularPrice">Regular Price
@@ -163,7 +172,7 @@ image_caption:
                 </label>
                 <input type="number" id="regularPrice" name="regularPrice" step="0.01" onblur="calculatePrices(this.id)">
             </li>
-    
+
             <!-- Additional Discount Percent -->
             <li>
                 <label for="additionalDiscountPercent">Additional Discount
@@ -171,7 +180,7 @@ image_caption:
                 </label>
                 <input type="number" id="additionalDiscountPercent" name="additionalDiscountPercent" step="0.01" placeholder="%" onblur="calculatePrices(this.id)">
             </li>
-    
+
             <!-- Customer Price -->
             <li>
                 <label for="customerPrice">Customer Price
@@ -179,7 +188,7 @@ image_caption:
                 </label>
                 <input type="number" id="customerPrice" name="customerPrice" step="0.01" onblur="calculatePrices(this.id)">
             </li>
-    
+
             <!-- Partner Discount Percent -->
             <li>
                 <label for="partnerDiscountPercent" class="optional">Partner Discount
@@ -187,7 +196,7 @@ image_caption:
                 </label>
                 <input type="number" id="partnerDiscountPercent" name="partnerDiscountPercent" step="0.01" placeholder="%" onblur="calculatePrices(this.id)">
             </li>
-    
+
             <!-- Partner Price -->
             <li>
                 <label for="partnerPrice">Partner Price
@@ -195,7 +204,7 @@ image_caption:
                 </label>
                 <input type="number" id="partnerPrice" name="partnerPrice" step="0.01" onblur="calculatePrices(this.id)">
             </li>
-    
+
             <!-- Distributor Discount Percent -->
             <li>
                 <label for="distributorDiscountPercent" class="optional">Distributor Discount
@@ -203,24 +212,26 @@ image_caption:
                 </label>
                 <input type="number" id="distributorDiscountPercent" name="distributorDiscountPercent" step="0.01" placeholder="%" onblur="calculatePrices(this.id)">
             </li>
-            
-            <!-- Net Price Card -->
-            <div class="net-price-card">
-                <h3>Net Price</h3>
-                <input type="number" id="netPrice" name="netPrice" step="0.01" readonly>
-            </div>
+        </ol>
+
+        <!-- Net Price Card -->
+        <div class="net-price-card">
+            <h3>Net Price</h3>
+            <input type="number" id="netPrice" name="netPrice" step="0.01" readonly>
+        </div>
     </form>
-    
-    
+
+
 </div>
-<div id="fork-me-container">
+<br>
+<!-- <div id="fork-me-container">
     <a href="https://github.com/sr7d/cpq-pricing-water-simulator/fork" target="_blank">
         <button class="button button--primary" id="fork-me">
             <i class="ion ion-logo-github" style="margin-right: 5px;"></i>
             Fork Me on Github
         </button>
     </a>
-</div>
+</div> -->
 
 
 
@@ -230,7 +241,7 @@ image_caption:
 
 /*===================
 Calculation Rank
-====================*/ 
+====================*/
         function calculateRank(changedFieldId) {
             let rank;
             switch (changedFieldId) {
@@ -272,37 +283,37 @@ Calculation Rank
             }
             return rank;
         }
-    
+
         let calculationRank = calculateRank(changedFieldId);
         console.log('Calculation Rank:', calculationRank);
 
 /*===================
 Default Values
-====================*/  
+====================*/
         let listPrice;
         let contractedPrice;
-    
+
         let specialPrice = document.getElementById('specialPrice').value;
         document.getElementById('specialPrice').style.color = 'fieldtext';
-        
+
         let prorateMultiplier = 1;
         document.getElementById('prorateMultiplier').style.color = 'fieldtext';
-        
+
         let proratedPrice = document.getElementById('proratedPrice').value;
         document.getElementById('proratedPrice').style.color = 'fieldtext';
-        
+
         let regularPrice = document.getElementById('regularPrice').value;
         document.getElementById('regularPrice').style.color = 'fieldtext';
 
         let additionalDiscountPercent = document.getElementById('additionalDiscountPercent').value;
         document.getElementById('additionalDiscountPercent').style.color = 'fieldtext';
-        
+
         let customerPrice = document.getElementById('customerPrice').value;
         document.getElementById('customerPrice').style.color = 'fieldtext';
 
         let partnerDiscountPercent = document.getElementById('partnerDiscountPercent').value;
         document.getElementById('partnerDiscountPercent').style.color = 'fieldtext';
-        
+
         let partnerPrice = document.getElementById('partnerPrice').value;
         document.getElementById('partnerPrice').style.color = 'fieldtext';
 
@@ -310,7 +321,7 @@ Default Values
 
 /*===================
 On List Price Change
-====================*/ 
+====================*/
 if (calculationRank === 1) {
             listPrice = parseFloat(document.getElementById('listPrice').value) || 0;
             document.getElementById('listPrice').value = listPrice.toFixed(2);
@@ -342,7 +353,7 @@ if (calculationRank === 1) {
 
 /*===================
 On Contracted Price Change
-====================*/ 
+====================*/
 if (calculationRank === 2) {
     contractedPrice = parseFloat(document.getElementById('contractedPrice').value) || 0;
     document.getElementById('contractedPrice').value = contractedPrice.toFixed(2);
@@ -371,10 +382,10 @@ if (calculationRank === 2) {
     document.getElementById('netPrice').value = netPrice.toFixed(2);
 
 }
-       
+
 /*===================
 On Special Price Change
-====================*/ 
+====================*/
 if (calculationRank === 3) {
     specialPrice = parseFloat(document.getElementById('specialPrice').value) || 0;
     document.getElementById('specialPrice').value = specialPrice.toFixed(2);
@@ -402,7 +413,7 @@ if (calculationRank === 3) {
 
 /*===================
 On Prorate Multiplier Change
-====================*/ 
+====================*/
 if (calculationRank === 4) {
     prorateMultiplier = parseFloat(document.getElementById('prorateMultiplier').value);
     document.getElementById('prorateMultiplier').value = prorateMultiplier.toFixed(2);
@@ -429,7 +440,7 @@ if (calculationRank === 4) {
 }
 /*===================
 On Regular Price Change
-====================*/ 
+====================*/
 if (calculationRank === 6) {
     regularPrice = parseFloat(document.getElementById('regularPrice').value);
     document.getElementById('regularPrice').value = regularPrice.toFixed(2);
@@ -446,10 +457,10 @@ if (calculationRank === 6) {
     document.getElementById('netPrice').value = netPrice.toFixed(2);
 
 }
-       
+
 /*===================
 On Additional Discount Change
-====================*/ 
+====================*/
 if (calculationRank === 7) {
     additionalDiscountPercent = parseFloat(document.getElementById('additionalDiscountPercent').value);
     document.getElementById('additionalDiscountPercent').value = additionalDiscountPercent.toFixed(2);
@@ -469,7 +480,7 @@ if (calculationRank === 7) {
 
 /*===================
 On Customer Price Change
-====================*/ 
+====================*/
 if (calculationRank === 8) {
     customerPrice = parseFloat(document.getElementById('customerPrice').value);
     document.getElementById('customerPrice').value = customerPrice.toFixed(2);
@@ -485,7 +496,7 @@ if (calculationRank === 8) {
 
 /*===================
 On Partner Discount Change
-====================*/ 
+====================*/
 if (calculationRank === 9) {
     partnerDiscountPercent = parseFloat(document.getElementById('partnerDiscountPercent').value) || 0;
     document.getElementById('partnerDiscountPercent').value = partnerDiscountPercent.toFixed(2);
@@ -494,32 +505,32 @@ if (calculationRank === 9) {
     document.getElementById('partnerPrice').value = partnerPrice.toFixed(2);
     document.getElementById('partnerPrice').style.color = 'orange';
 
-    netPrice = partnerPrice; 
+    netPrice = partnerPrice;
     document.getElementById('netPrice').value = netPrice.toFixed(2);
 }
 
 
 /*===================
 On Partner Price Change
-====================*/ 
+====================*/
 if (calculationRank === 10) {
     partnerPrice = parseFloat(document.getElementById('partnerPrice').value) || 0;
     document.getElementById('partnerPrice').value = partnerPrice.toFixed(2);
     document.getElementById('partnerPrice').style.color = 'orange';
 
-    netPrice = partnerPrice; 
+    netPrice = partnerPrice;
     document.getElementById('netPrice').value = netPrice.toFixed(2);
 }
 
 /*===================
 On Distributor Discount Change
-====================*/ 
+====================*/
 if (calculationRank === 11) {
-    distributorDiscountPercent = parseFloat(document.getElementById('distributorDiscountPercent').value); 
+    distributorDiscountPercent = parseFloat(document.getElementById('distributorDiscountPercent').value);
     netPrice = partnerPrice * (1 - distributorDiscountPercent / 100);
     document.getElementById('netPrice').value = netPrice.toFixed(2);
 }
 
     }
-    
+
 </script>
