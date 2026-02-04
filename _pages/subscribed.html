@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Thanks for Subscribing ✅ 
+title: Thanks for Subscribing
 description: "Your subscription to the <em>'Learn Revenue Cloud'</em> newsletter is confirmed, so feel free to explore some previous posts or reach out with questions, and thanks again for joining!"
 permalink: /subscribed/
 image:
@@ -8,7 +8,9 @@ image_caption:
 hide_subscribe: true
 ---
 
-<p><em>Using an ad blocker? <a id="manual-subscribe" href="https://hooks.zapier.com/hooks/catch/15224114/uld7fir/" target="_blank">Click here to manually subscribe</a>.</em></p>
+<p id="adblocker-msg" style="display:none;"><em>Using an ad blocker? <a id="manual-subscribe" href="https://hooks.zapier.com/hooks/catch/15224114/uld7fir/" target="_blank">Click here to manually subscribe</a>.</em></p>
+
+<p id="no-email-msg" style="display:none;"><em>⚠️ There was an issue with your subscribe link! <a href="https://buttondown.com/cpqdevelopers" target="_blank">Click here to manually subscribe</a>.</em></p>
 
 <script>
   const params = new URLSearchParams(window.location.search);
@@ -17,7 +19,10 @@ hide_subscribe: true
   if (email) {
     const url = `https://hooks.zapier.com/hooks/catch/15224114/uld7fir/?email=${encodeURIComponent(email)}`;
     document.getElementById('manual-subscribe').href = url;
+    document.getElementById('adblocker-msg').style.display = 'block';
     fetch(url, { method: "GET", mode: "no-cors" });
+  } else {
+    document.getElementById('no-email-msg').style.display = 'block';
   }
 </script>
 

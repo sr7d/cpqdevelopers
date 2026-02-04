@@ -142,7 +142,7 @@ image_caption:
     position: relative;
   }
   .engagement-featured::before {
-    content: 'Most Common';
+    content: 'Popular';
     position: absolute;
     top: -12px;
     left: 24px;
@@ -265,6 +265,29 @@ image_caption:
     margin: 0;
   }
 
+  /* Engagement pricing */
+  .engagement-pricing {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border-color, #eee);
+  }
+  .engagement-price {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--dark);
+    line-height: 1;
+  }
+  .engagement-price-suffix {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--gray);
+  }
+  .engagement-price-note {
+    font-size: 13px;
+    color: var(--gray);
+    margin-top: 4px;
+  }
+
   /* CTA */
   .services-cta {
     background: var(--dark);
@@ -294,7 +317,7 @@ image_caption:
     color: var(--dark);
   }
 </style>
-<div class="stats-bar">
+<!-- <div class="stats-bar">
   <div class="stat-item">
     <div class="stat-number">10+</div>
     <div class="stat-label">Years CPQ Experience</div>
@@ -307,11 +330,11 @@ image_caption:
     <div class="stat-number">$2B+</div>
     <div class="stat-label">Revenue Processed</div>
   </div>
-</div>
+</div> -->
 
-<div class="section-header">
+<!-- <div class="section-header">
   <h2>Areas of Expertise</h2>
-</div>
+</div> -->
 
 <div class="services-grid">
   <div class="service-card">
@@ -352,6 +375,10 @@ image_caption:
       </div>
       <h3>Project Oversight</h3>
       <p class="engagement-subtitle">Your technical advocate during partner implementations</p>
+      <div class="engagement-pricing">
+        <div class="engagement-price">$150<span class="engagement-price-suffix">/hour</span></div>
+        <p class="engagement-price-note">10-hour weekly minimum.</p>
+      </div>
     </div>
     <div class="engagement-content">
       <p>When you're working with a Salesforce partner or SI, having an independent expert validate their proposed architecture can prevent costly mistakes. I review solution designs, challenge assumptions, identify risks, and ensure what's being built will actually scale.</p>
@@ -370,15 +397,19 @@ image_caption:
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
       </div>
       <h3>Retainers & Staff Augmentation</h3>
-      <p class="engagement-subtitle">Ongoing expertise when you need it</p>
+      <p class="engagement-subtitle">Hands-on functional consultant embedded with your team</p>
+      <div class="engagement-pricing">
+        <div class="engagement-price">$99<span class="engagement-price-suffix">/hour</span></div>
+        <p class="engagement-price-note">25-hour weekly minimum.<br>2-month engagement minimum.</p>
+      </div>
     </div>
     <div class="engagement-content">
-      <p>For organizations that need consistent access to deep CPQ/Revenue Cloud expertise without a full-time hire. Embedded with your team on a fractional basis or available on-call for technical guidance.</p>
+      <p>A dedicated functional consultant working directly in your Salesforce org. I handle configuration, testing, documentation, and user support the same work you'd expect from a team member, without the overhead.</p>
       <ul class="engagement-benefits">
-        <li>Predictable monthly availability</li>
-        <li>Faster response than finding new contractors</li>
-        <li>Continuity across multiple initiatives</li>
-        <li>Knowledge transfer to your team</li>
+        <li>Direct configuration and build work</li>
+        <li>Testing, QA, and deployment support</li>
+        <li>End-user training and documentation</li>
+        <li>Embedded in your team's workflow</li>
       </ul>
     </div>
   </div>
@@ -390,6 +421,10 @@ image_caption:
       </div>
       <h3>Custom Projects</h3>
       <p class="engagement-subtitle">Scoped engagements for specific outcomes</p>
+      <div class="engagement-pricing">
+        <div class="engagement-price">Custom</div>
+        <p class="engagement-price-note">Scoped to your needs</p>
+      </div>
     </div>
     <div class="engagement-content">
       <p>Defined-scope projects with clear deliverables. Performance audits, migration planning, architecture design, or hands-on implementation work. Fixed timeline, fixed outcome.</p>
@@ -405,5 +440,5 @@ image_caption:
 
 <div class="services-cta">
   <p>If you're evaluating Salesforce Revenue Cloud or dealing with a CPQ implementation that isn't performing as expected, let's discuss your situation.</p>
-  <a href="/contact/" class="cta-link">Start a Conversation</a>
+  <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/cpqdevelopers/15min'});return false;" class="cta-link">Start a Conversation</a>
 </div>

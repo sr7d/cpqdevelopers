@@ -22,6 +22,7 @@
       gap: 8px;
       color: white;
       font-size: 13px;
+      font-weight: 700;
       line-height: 1;
       margin: 0;
       padding: 0;
@@ -29,55 +30,15 @@
     #inviteText strong {
       font-weight: 700;
     }
-    #inviteBell {
-      font-size: 18px;
-    }
-    /* Combined input + button pill, compact to fit skinny banner */
-    .popup .banner-signup-form {
-      display: inline-flex;
-      align-items: center;
-      position: relative;
-      width: 220px;
+    .popup .banner-button {
       height: 24px;
-      border-radius: 14px;
-      margin: 0;
-      flex-shrink: 0;
-    }
-    .popup .banner-input {
-      width: 100%;
-      height: 24px;
-      padding: 0 58px 0 8px;
+      padding: 0 12px;
       margin: 0;
       font-size: 12px;
-      font-weight: 400;
-      line-height: 24px;
-      border: none;
-      outline: 0;
-      border-radius: 14px;
-      color: var(--heading-font-color);
-      background-color: var(--background-color);
-      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-      box-sizing: border-box;
-      vertical-align: middle;
-    }
-    .popup .banner-input::placeholder {
-      color: var(--text-alt-color);
-    }
-    .popup .banner-input:focus {
-      box-shadow: 0 0 0 1px var(--white), inset 0 0 0 1px var(--primary-color);
-    }
-    .popup .banner-button {
-      position: absolute;
-      top: 2px;
-      right: 2px;
-      height: 20px;
-      padding: 0 8px;
-      margin: 0;
-      font-size: 11px;
       font-weight: 700;
-      line-height: 20px;
+      line-height: 24px;
       text-decoration: none;
-      border-radius: 10px;
+      border-radius: 12px;
       border: none;
       outline: none;
       cursor: pointer;
@@ -93,54 +54,6 @@
     }
   </style>
 
-  <form id="banner-web-to-lead-form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00Da500001Nhn69" method="POST" target="banner_hidden_iframe" style="display:none;">
-    <input type="hidden" name="oid" value="00Da500001Nhn69">
-    <input type="hidden" name="retURL" value="http://">
-    <input type="hidden" name="lead_source" value="cpqdevelopers.com/free-revenue-cloud-trial">
-    <input type="hidden" id="banner-lead-email" name="email" value="">
-  </form>
-  <iframe name="banner_hidden_iframe" style="display:none;"></iframe>
-
   <div id="contributePopup" class="popup">
-    <span id="inviteText">🔥 Free Revenue Cloud Dev Org <span class="banner-signup-form"><input type="email" id="banner-trial-email" name="trial-email" placeholder="your.email@company.com" class="banner-input"> <button type="button" class="banner-button" onclick="handleBannerTrialSubmit(event)">Sign Up</button></span> <span id="banner-email-error" style="display: none; color: rgba(255,255,255,0.95); font-size: 11px; margin-left: 4px;">Please enter a valid business email.</span></span>
+    <span id="inviteText">🔥 Schedule Your Free Assessment <button type="button" class="banner-button" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/cpqdevelopers/15min'});return false;">Book Now</button></span>
   </div>
-
-  <script>
-    function isBusinessEmailBanner(email) {
-      var personalDomains = [
-        'gmail.com', 'yahoo.com', 'hotmail.com', 'outlook.com', 'aol.com',
-        'icloud.com', 'mail.com', 'protonmail.com', 'zoho.com', 'yandex.com',
-        'gmx.com', 'live.com', 'msn.com', 'me.com', 'inbox.com',
-        'yahoo.co.uk', 'hotmail.co.uk', 'gmail.co.uk', 'outlook.co.uk'
-      ];
-      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!emailRegex.test(email)) return false;
-      var domain = email.split('@')[1].toLowerCase();
-      return personalDomains.indexOf(domain) === -1;
-    }
-
-    function handleBannerTrialSubmit(event) {
-      event.preventDefault();
-
-      var emailInput = document.getElementById('banner-trial-email');
-      var emailError = document.getElementById('banner-email-error');
-      var email = emailInput ? emailInput.value.trim() : '';
-
-      if (!email || !isBusinessEmailBanner(email)) {
-        if (emailError) emailError.style.display = 'inline';
-        if (emailInput) emailInput.style.borderColor = 'red';
-        return false;
-      }
-
-      if (emailError) emailError.style.display = 'none';
-      if (emailInput) emailInput.style.borderColor = '';
-
-      var leadEmail = document.getElementById('banner-lead-email');
-      var webToLeadForm = document.getElementById('banner-web-to-lead-form');
-      if (leadEmail) leadEmail.value = email;
-      if (webToLeadForm) webToLeadForm.submit();
-
-      window.open('https://trailhead.salesforce.com/promo/orgs/get-started-revenue-cloud', '_blank');
-      return false;
-    }
-  </script>

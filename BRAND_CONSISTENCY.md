@@ -96,7 +96,7 @@ Use lowercase, hyphenated tags consistently:
 ## Call-to-Action Phrases
 
 ### Consultation Booking
-- Primary: **Book Time**
+- Primary: **Free Assesment**
 - Alternative: **Let's Work Together!**
 - Link text: **Schedule a 15-minute consultation**
 

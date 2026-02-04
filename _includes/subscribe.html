@@ -12,15 +12,21 @@
               <p class="subscribe__description">{{ site.data.settings.newsletter.description }}</p>
             {% endif %}
           </div>
-          <form class="subscribe-form embeddable-buttondown-form"
-            action="https://buttondown.com/api/emails/embed-subscribe/cpqdevelopers"
-            method="post"
-            target="_blank">
+          <form class="subscribe-form" id="subscribe-form">
             <label class="screen-reader-text" for="bd-email">Email address</label>
             <input class="subscribe-email required email" id="bd-email" type="email" name="email"
-              placeholder="{{ site.data.settings.newsletter.input_text | default: 'Your Email Address...' }}">
+              placeholder="{{ site.data.settings.newsletter.input_text | default: 'Your Email Address...' }}" required>
             <button class="button button--primary subscribe-button" type="submit">{{ site.data.settings.newsletter.button_text | default: 'Subscribe' }}</button>
           </form>
+          <script>
+            document.getElementById('subscribe-form').addEventListener('submit', function(e) {
+              e.preventDefault();
+              const email = document.getElementById('bd-email').value;
+              if (email) {
+                window.open(`/subscribed/?email=${encodeURIComponent(email)}`, '_blank');
+              }
+            });
+          </script>
         </div>
         <div class="subscribe__bg lazy" data-bg="{{ site.data.settings.newsletter.background_image }}"></div>
       </div>
