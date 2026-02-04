@@ -87,6 +87,10 @@ layout: default
       {{ content }}
     </div>
 
+    {% if page.gate == true %}
+      {% include content-gate.html %}
+    {% endif %}
+
     <!--
     <div class="post__share">
       <ul class="share__list list-reset">

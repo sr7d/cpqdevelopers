@@ -1,0 +1,282 @@
+<!-- Content Gate - Hides content below 25% until email submission -->
+<style>
+  .gate-container {
+    position: relative;
+  }
+
+  .gated-content.content-blur {
+    filter: blur(8px);
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .gate-overlay {
+    position: absolute;
+    top: 0;
+    left: -50vw;
+    right: -50vw;
+    bottom: 0;
+    background: linear-gradient(to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.5) 80px,
+      rgba(255, 255, 255, 0.7) 150px
+    );
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 80px;
+    z-index: 10;
+  }
+
+  .content-gate-form {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 30px 40px;
+    max-width: 450px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+  }
+
+  .content-gate-form h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+    color: #333;
+  }
+
+  .content-gate-form p {
+    margin: 0 0 20px 0;
+    color: #666;
+    font-size: 0.95rem;
+  }
+
+  .gate-email-input {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+
+  .gate-email-input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+  }
+
+  .gate-email-error {
+    color: #dc3545;
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+    display: none;
+  }
+
+  .gate-submit-btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .gate-privacy-note {
+    margin-top: 15px;
+    font-size: 0.8rem;
+    color: #999;
+  }
+
+  /* Hide gate when unlocked */
+  .content-unlocked .gated-content.content-blur {
+    filter: none;
+    pointer-events: auto;
+    user-select: auto;
+  }
+
+  .content-unlocked .gate-overlay {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    .content-gate-form {
+      padding: 25px 20px;
+      margin: 0 15px;
+    }
+
+    .content-gate-form h3 {
+      font-size: 1.3rem;
+    }
+
+    .gate-overlay {
+      padding-top: 50px;
+    }
+  }
+</style>
+
+<!-- Hidden Salesforce Web-to-Lead Form -->
+<form id="gate-web-to-lead-form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00Da500001Nhn69" method="POST" target="gate_iframe" style="display:none;">
+  <input type="hidden" name="oid" value="00Da500001Nhn69">
+  <input type="hidden" name="retURL" value="http://">
+  <input type="hidden" name="lead_source" id="gate-lead-source" value="">
+  <input type="hidden" name="email" id="gate-lead-email" value="">
+</form>
+<iframe name="gate_iframe" style="display:none;"></iframe>
+
+<script>
+(function() {
+  const STORAGE_KEY = 'cpqdev_content_unlocked';
+
+  // Business email validation (reused from trial post)
+  function isBusinessEmail(email) {
+    const personalDomains = [
+      'gmail.com', 'yahoo.com', 'hotmail.com', 'outlook.com', 'aol.com',
+      'icloud.com', 'mail.com', 'protonmail.com', 'zoho.com', 'yandex.com',
+      'gmx.com', 'live.com', 'msn.com', 'me.com', 'inbox.com',
+      'yahoo.co.uk', 'hotmail.co.uk', 'gmail.co.uk', 'outlook.co.uk'
+    ];
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      return false;
+    }
+
+    const domain = email.split('@')[1].toLowerCase();
+    return !personalDomains.includes(domain);
+  }
+
+  // Check if content is already unlocked
+  function checkContentUnlocked() {
+    return localStorage.getItem(STORAGE_KEY) !== null;
+  }
+
+  // Unlock content and store in localStorage
+  function unlockContent(email) {
+    localStorage.setItem(STORAGE_KEY, email);
+    const postContent = document.querySelector('.post__content');
+    if (postContent) {
+      postContent.classList.add('content-unlocked');
+    }
+  }
+
+  // Handle form submission
+  window.handleGateSubmit = function(event) {
+    event.preventDefault();
+
+    const emailInput = document.getElementById('gate-email-input');
+    const emailError = document.getElementById('gate-email-error');
+    const email = emailInput.value.trim();
+
+    if (!email || !isBusinessEmail(email)) {
+      emailError.style.display = 'block';
+      emailInput.style.borderColor = '#dc3545';
+      return false;
+    }
+
+    // Hide error if previously shown
+    emailError.style.display = 'none';
+    emailInput.style.borderColor = '';
+
+    // Set values in hidden Salesforce form
+    document.getElementById('gate-lead-email').value = email;
+    document.getElementById('gate-lead-source').value = window.location.pathname;
+
+    // Submit to Salesforce
+    document.getElementById('gate-web-to-lead-form').submit();
+
+    // Unlock content
+    unlockContent(email);
+
+    return false;
+  };
+
+  // Initialize gate on page load
+  function initContentGate() {
+    const postContent = document.querySelector('.post__content');
+    if (!postContent) return;
+
+    // Set lead source to current page
+    const leadSourceInput = document.getElementById('gate-lead-source');
+    if (leadSourceInput) {
+      leadSourceInput.value = window.location.pathname;
+    }
+
+    // If already unlocked, just add the class and exit
+    if (checkContentUnlocked()) {
+      postContent.classList.add('content-unlocked');
+      return;
+    }
+
+    // Get all direct children of post content
+    const children = Array.from(postContent.children);
+    if (children.length === 0) return;
+
+    // Calculate total height and find 25% point
+    let totalHeight = 0;
+    children.forEach(child => {
+      totalHeight += child.offsetHeight;
+    });
+
+    const targetHeight = totalHeight * 0.25;
+    let accumulatedHeight = 0;
+    let gateIndex = 0;
+
+    // Find the element where we hit ~25%
+    for (let i = 0; i < children.length; i++) {
+      accumulatedHeight += children[i].offsetHeight;
+      if (accumulatedHeight >= targetHeight) {
+        gateIndex = i + 1; // Gate starts after this element
+        break;
+      }
+    }
+
+    // Ensure we have at least some content before the gate
+    if (gateIndex < 1) gateIndex = 1;
+    if (gateIndex >= children.length) gateIndex = Math.max(1, children.length - 1);
+
+    // Create container that holds both blurred content and overlay
+    const gateContainer = document.createElement('div');
+    gateContainer.className = 'gate-container';
+
+    // Create gated content wrapper (will be blurred)
+    const gatedWrapper = document.createElement('div');
+    gatedWrapper.className = 'gated-content content-blur';
+
+    // Move elements after gate point into the wrapper
+    const elementsToWrap = children.slice(gateIndex);
+    elementsToWrap.forEach(el => {
+      gatedWrapper.appendChild(el);
+    });
+
+    // Create gate overlay with form (sibling to gated content, not inside it)
+    const gateOverlay = document.createElement('div');
+    gateOverlay.className = 'gate-overlay';
+    gateOverlay.innerHTML = `
+      <div class="content-gate-form">
+        <!-- <h3>Continue Reading</h3> -->
+        <p><strong>Enter your business email to unlock the full article.</strong></p>
+        <form onsubmit="return handleGateSubmit(event);">
+          <input type="email" id="gate-email-input" class="gate-email-input" placeholder="your.email@company.com" required>
+          <div id="gate-email-error" class="gate-email-error">Please enter a valid business email address.</div>
+          <button type="submit" class="button button--primary gate-submit-btn">Continue Reading</button>
+        </form>
+        <!-- <p class="gate-privacy-note">We respect your privacy. No spam, ever.</p> -->
+      </div>
+    `;
+
+    // Add blurred content to container
+    gateContainer.appendChild(gatedWrapper);
+    // Add overlay as sibling (not inside blurred content)
+    gateContainer.appendChild(gateOverlay);
+
+    // Append container to post content
+    postContent.appendChild(gateContainer);
+  }
+
+  // Run on DOM ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initContentGate);
+  } else {
+    initContentGate();
+  }
+})();
+</script>
