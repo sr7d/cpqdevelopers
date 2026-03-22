@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Salesforce Revenue Cloud - Free Trial & Setup Guide (RLM)
-description: How to get a free Salesforce Revenue Cloud trial org and configure it for testing. Covers CLM, pricing waterfall, document generation, and Dynamic Revenue Orchestrator setup. Yes, Salesforce has a free developer trial.
+description: Yes, Salesforce has a free trial. Get a Revenue Cloud developer edition org and set it up for testing. Covers pricing waterfall, document generation, and DRO.
 date: 2024-10-31 15:01:35 +0300
 author: admin
 image: /images/revCloudTrial.png

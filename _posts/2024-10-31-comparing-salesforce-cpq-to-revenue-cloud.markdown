@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Salesforce CPQ vs Revenue Cloud: Side-by-Side Comparison"
-description: Salesforce CPQ vs Revenue Cloud (RLM) - feature comparison covering product catalog, pricing, quoting, billing, and subscriptions. The definitive guide for teams evaluating Revenue Cloud Advanced as a CPQ replacement.
+description: Salesforce CPQ vs Revenue Cloud (RLM) - feature comparison covering pricing, quoting, billing, and subscriptions. The definitive CPQ replacement guide.
 date: 2024-10-31 15:01:35 +0300
 author: raeshib_aggerwhil
 image: /images/RevCPQCompare.png

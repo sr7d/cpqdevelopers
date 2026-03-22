@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Revenue Cloud Developer Roadmap - Skills and Training Guide
-description: Salesforce Revenue Cloud developer and CPQ architect skills guide. Covers Trailhead paths, training resources, and the technical skills that matter in real Revenue Cloud implementations.
+title: Revenue Cloud Developer Guide - Trailhead and Training
+description: Salesforce Revenue Cloud developer guide and CPQ architect skills. Covers Trailhead training paths and the technical skills for real Revenue Cloud work.
 date: 2025-01-26 15:01:35 +0300
 author: admin
 image: /images/revCloudRoadmap.png

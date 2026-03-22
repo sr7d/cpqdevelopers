@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Salesforce RLM: Revenue Lifecycle Management Explained"
-description: What is Salesforce Revenue Cloud (RLM)? Understand what Revenue Lifecycle Management is, how it differs from legacy Salesforce CPQ, and why it matters for developers, admins, and partners.
+description: What is Salesforce Revenue Cloud (RLM)? Covers Salesforce RLM - revenue lifecycle management software replacing legacy CPQ - for SFDC developers and admins.
 date: 2024-10-31 15:01:35 +0300
 author: mihir_mehta
 image: /images/salesforce_projection.png

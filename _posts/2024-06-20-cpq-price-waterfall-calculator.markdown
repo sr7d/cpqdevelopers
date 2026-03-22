@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Salesforce CPQ Price Waterfall Calculator
-description: Interactive Salesforce CPQ price waterfall calculator and pricing waterfall analysis tool. Simulate how list price, partner discounts, and additional discounts combine to produce the net price at each stage.
+description: Interactive Salesforce CPQ price waterfall tool. Simulate pricing waterfall stages - list price, discounts, and net price. CPQ pricing waterfall and cost waterfall analysis.
 date: 2024-06-20 10:00:00 +0300
 author: admin
 image: /images/pricingWaterfall.png

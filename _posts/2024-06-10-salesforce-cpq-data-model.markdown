@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Salesforce CPQ Data Model - Objects and Relationships
-description: This interactive diagram shows the core data model for Salesforce CPQ. Understanding these object relationships is essential for building custom solutions, writing integrations, and troubleshooting complex configurations.
+description: Interactive Salesforce CPQ data model. Core Sales Cloud and CPQ object relationships - essential for custom solutions, integrations, and troubleshooting.
 date: 2024-06-10 10:00:00 +0300
 author: admin
 image: /images/cpqDataModel.png

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Salesforce Revenue Cloud Data Model - Core Objects
-description: An interactive diagram of the Salesforce Revenue Cloud data model. Covers how Product Catalog, Pricing, Sales Transaction, and Order objects relate  -  and how the architecture differs from legacy CPQ.
+description: Interactive Salesforce Revenue Cloud data model. Covers Product Catalog, Pricing, Sales Transaction, and Order objects and how they differ from legacy CPQ.
 date: 2024-06-12 10:00:00 +0300
 author: admin
 image: /images/revenueCloudDataModel.png

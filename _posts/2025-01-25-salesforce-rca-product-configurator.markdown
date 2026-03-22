@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Product Configurator in Salesforce Revenue Cloud
-description: Learn how to customize the Salesforce Revenue Cloud product configurator and advanced configurator - modifying flows, assigning custom flows to products, and building tailored configuration experiences.
+title: Salesforce Revenue Cloud Product Configurator Guide
+description: How to customize the Salesforce Revenue Cloud product configurator and advanced configurator. Clone and modify flows, assign custom flows to products.
 date: 2025-01-24 15:01:35 +0300
 author: admin
 image: /images/ruminations.png

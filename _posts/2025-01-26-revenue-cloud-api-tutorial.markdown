@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Revenue Cloud API Tutorial - A Developer's Guide
-description: A quick guide for developers working with Salesforce Revenue Cloud APIs. Learn authentication, key endpoints, code examples, and best practices for integrating with Revenue Cloud programmatically.
+description: Salesforce Revenue Cloud API developer guide. Authentication, key endpoints, code examples, and integration best practices for Revenue Cloud.
 date: 2025-01-26 15:01:35 +0300
 author: admin
 image: /images/revCloudAPI.png

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Direct Links to the Salesforce CPQ Quote Line Editor
-description: How to use the hyperlink function in Salesforce CPQ to build direct links to and from the Quote Line Editor. Covers HYPERLINK and USERINFO formulas, redirects, dynamic link building, and screen flows.
+description: How to use the hyperlink function in Salesforce CPQ for direct QLE links. Covers HYPERLINK and USERINFO formulas, redirects, and screen flows.
 date: 2023-08-18 15:01:35 +0300
 author: admin
 image: /images/QLELinks.png
