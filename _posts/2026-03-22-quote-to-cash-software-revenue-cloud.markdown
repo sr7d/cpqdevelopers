@@ -38,7 +38,7 @@ Revenue Cloud has strong native coverage for most of these stages. Let's go thro
 
 The product configurator in Revenue Cloud handles bundles, options, cardinality rules, and attribute-based configuration. Product Data Managers use a drag-and-drop interface to build the catalog. Real-time price visibility in the configurator is a significant improvement over legacy CPQ.
 
-Developers can extend configuration logic via Apex, custom LWCs, or the Revenue Cloud API. See the [product configurator guide](/salesforce-rca-product-configurator/) for detail.
+Developers can extend configuration logic via Apex, custom LWCs, or the Revenue Cloud API. See the [product configurator guide](/salesforce-rca-product-configurator) for detail.
 
 
 ## Price
@@ -47,7 +47,7 @@ Developers can extend configuration logic via Apex, custom LWCs, or the Revenue 
 
 The pricing waterfall in Revenue Cloud is composable  -  you build price rules (Price Adjustments, Price Schedules, Attribute-Based Pricing) and the system evaluates them in sequence. The waterfall testing tool lets you simulate pricing scenarios before deploying to production.
 
-For usage-based pricing specifically, Revenue Cloud handles usage events and rollups natively. See the [usage-based selling guide](/usage-based-selling-in-revenue-cloud/) for setup.
+For usage-based pricing specifically, Revenue Cloud handles usage events and rollups natively. See the [usage-based selling guide](/usage-based-selling-in-revenue-cloud) for setup.
 
 
 ## Quote
@@ -65,7 +65,7 @@ Legacy CPQ had pre-built quote templates and DocuSign integration from day one. 
 
 **Revenue Cloud coverage: Good.**
 
-Approval workflows are configured via standard Salesforce Approval Processes. Contract Lifecycle Management (CLM) handles document negotiation and redlining. See the [Salesforce CLM guide](/salesforce-clm-revenue-cloud/) for detail on enabling and configuring CLM.
+Approval workflows are configured via standard Salesforce Approval Processes. Contract Lifecycle Management (CLM) handles document negotiation and redlining. See the [Salesforce CLM guide](/salesforce-clm-revenue-cloud) for detail on enabling and configuring CLM.
 
 
 ## Order
@@ -79,14 +79,14 @@ Revenue Cloud's order management converts quotes to orders and supports amendmen
 
 **Revenue Cloud coverage: Strong for complex scenarios.**
 
-Dynamic Revenue Orchestration (DRO) decomposes orders into fulfillment SKUs and coordinates across ERP and external systems. Most relevant for companies with physical product + service combinations or multi-system delivery. See the [Revenue Cloud data model](/salesforce-revenue-cloud-data-model/) for how orders connect to fulfillment.
+Dynamic Revenue Orchestration (DRO) decomposes orders into fulfillment SKUs and coordinates across ERP and external systems. Most relevant for companies with physical product + service combinations or multi-system delivery. See the [Revenue Cloud data model](/salesforce-revenue-cloud-data-model) for how orders connect to fulfillment.
 
 
 ## Invoice / Bill
 
 **Revenue Cloud coverage: Strong.**
 
-Revenue Cloud's integrated billing handles one-time charges, recurring subscriptions, usage-based billing, and milestone billing. The [billing setup guide](/revenue-cloud-billing-setup/) covers the configuration steps.
+Revenue Cloud's integrated billing handles one-time charges, recurring subscriptions, usage-based billing, and milestone billing. The [billing setup guide](/revenue-cloud-billing-setup) covers the configuration steps.
 
 
 ## Collect / Revenue Recognition
@@ -113,6 +113,6 @@ A practical Revenue Cloud Q2C stack looks like this:
 
 ## Next Steps
 
-- [Free Revenue Cloud trial](/free-revenue-cloud-trial/)  -  configure your own Q2C environment
-- [Salesforce CLM in Revenue Cloud](/salesforce-clm-revenue-cloud/)  -  deep dive on the negotiate/approve stage
-- [Comparing Salesforce CPQ and Revenue Cloud](/comparing-salesforce-cpq-to-revenue-cloud/)  -  understand the migration trade-offs
+- [Free Revenue Cloud trial](/free-revenue-cloud-trial)  -  configure your own Q2C environment
+- [Salesforce CLM in Revenue Cloud](/salesforce-clm-revenue-cloud)  -  deep dive on the negotiate/approve stage
+- [Comparing Salesforce CPQ and Revenue Cloud](/comparing-salesforce-cpq-to-revenue-cloud)  -  understand the migration trade-offs

@@ -88,7 +88,7 @@ Products exist within a hierarchy: **Product Catalog → Category → Product**.
 - The product may not be assigned to a category within the catalog
 - The catalog may need to be refreshed
 
-For a full troubleshooting checklist see: [Product Not Showing in Browse Catalogs](/revenue-cloud-product-not-showing-in-browse-catalogs/)
+For a full troubleshooting checklist see: [Product Not Showing in Browse Catalogs](/revenue-cloud-product-not-showing-in-browse-catalogs)
 
 ## Summary
 

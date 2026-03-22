@@ -133,4 +133,4 @@ Migrating data to Salesforce CPQ requires careful planning, a solid understandin
 
 If you're starting a new implementation in 2025 or later, you should evaluate whether Salesforce CPQ or Revenue Cloud is the right choice. CPQ reached End of Sale in March 2025, meaning it's now in maintenance mode.
 
-For a detailed comparison to help you decide, see: [Comparing Salesforce CPQ and Revenue Cloud](/comparing-salesforce-cpq-to-revenue-cloud/)
+For a detailed comparison to help you decide, see: [Comparing Salesforce CPQ and Revenue Cloud](/comparing-salesforce-cpq-to-revenue-cloud)

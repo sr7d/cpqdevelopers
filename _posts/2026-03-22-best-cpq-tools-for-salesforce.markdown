@@ -91,6 +91,6 @@ Several ISV CPQ tools work alongside Salesforce rather than replacing it. These 
 
 ## Next Steps
 
-- [Comparing Salesforce CPQ and Revenue Cloud](/comparing-salesforce-cpq-to-revenue-cloud/)  -  feature-by-feature breakdown
-- [Free Revenue Cloud trial setup](/free-revenue-cloud-trial/)  -  get hands-on before you commit
-- [Revenue Cloud pricing breakdown](/revenue-cloud-pricing-breakdown/)  -  understand the investment
+- [Comparing Salesforce CPQ and Revenue Cloud](/comparing-salesforce-cpq-to-revenue-cloud)  -  feature-by-feature breakdown
+- [Free Revenue Cloud trial setup](/free-revenue-cloud-trial)  -  get hands-on before you commit
+- [Revenue Cloud pricing breakdown](/revenue-cloud-pricing-breakdown)  -  understand the investment

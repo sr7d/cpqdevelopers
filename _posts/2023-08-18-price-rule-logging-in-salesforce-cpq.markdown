@@ -100,4 +100,4 @@ If you find the process of implementing price rule logging complex or time-consu
 
 Revenue Cloud uses **Pricing Procedures** instead of CPQ Price Rules. Pricing Procedures have built-in debug logging capabilities through the Expression Set framework, making it easier to trace pricing calculations without custom solutions.
 
-For an overview of Revenue Cloud's pricing architecture and setup, see: [Salesforce Revenue Cloud Trial Setup Guide](/free-revenue-cloud-trial/)
+For an overview of Revenue Cloud's pricing architecture and setup, see: [Salesforce Revenue Cloud Trial Setup Guide](/free-revenue-cloud-trial)

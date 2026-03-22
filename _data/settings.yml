@@ -2,7 +2,7 @@
 # Site Settings
 title: CPQ Developers — Salesforce Revenue Cloud & CPQ
 # logo: /images/logo.png
-description: This site documents real-world Salesforce CPQ and Revenue Cloud implementations.
+description: Practical Salesforce Revenue Cloud and CPQ guides for developers and admins - setup guides, data models, API references, migration walkthroughs, and troubleshooting resources.
 
 
 #-------------------------------
@@ -65,7 +65,7 @@ newsletter:
 # Footer Navigation
 footer__menu__settings:
   menu__items: 
-      - url: '/Contact/'
+      - url: '/contact'
         title: '📧 Contact Form'     
 
 

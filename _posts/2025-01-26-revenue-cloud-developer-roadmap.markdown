@@ -59,7 +59,7 @@ For any custom development or integration work, you need to understand the APIs:
 - **Product Configurator APIs** - Headless product configuration ([documentation](https://developer.salesforce.com/docs/atlas.en-us.revenue_lifecycle_management_dev_guide.meta/revenue_lifecycle_management_dev_guide/product_configurator_business_api_overview.htm))
 - **Standard Salesforce REST APIs** - For working with Revenue Cloud objects
 
-The APIs are available in API version 60.0 and later. If you're building integrations or custom experiences, start with the [API tutorial](/revenue-cloud-api-tutorial/).
+The APIs are available in API version 60.0 and later. If you're building integrations or custom experiences, start with the [API tutorial](/revenue-cloud-api-tutorial).
 
 ## What About CPQ Knowledge?
 
@@ -109,7 +109,7 @@ Both paths are valid. Consultants often start at partners and move in-house; int
 - [Release Notes](https://help.salesforce.com/s/articleView?id=release-notes.salesforce_release_notes.htm&type=5) - Revenue Cloud evolves quickly
 
 **Hands-On Practice**:
-- Set up a [Developer Edition or Promo Edition org](/revenue-cloud-trial-limitations/) and build something
+- Set up a [Developer Edition or Promo Edition org](/revenue-cloud-trial-limitations) and build something
 - Work through the product catalog setup end-to-end
 - Create pricing procedures and test them with real scenarios
 

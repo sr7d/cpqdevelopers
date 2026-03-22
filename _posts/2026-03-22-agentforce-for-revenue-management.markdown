@@ -90,6 +90,6 @@ Full autonomous revenue workflows are worth watching, but budget for incremental
 
 ## Next Steps
 
-- [Revenue Cloud API tutorial](/revenue-cloud-api-tutorial/)  -  the same API Agentforce actions use to interact with Revenue Cloud
-- [Revenue Cloud developer roadmap](/revenue-cloud-developer-roadmap/)  -  skills needed to build Agentforce integrations
-- [Comparing Salesforce CPQ and Revenue Cloud](/comparing-salesforce-cpq-to-revenue-cloud/)  -  understand the platform before adding AI on top
+- [Revenue Cloud API tutorial](/revenue-cloud-api-tutorial)  -  the same API Agentforce actions use to interact with Revenue Cloud
+- [Revenue Cloud developer roadmap](/revenue-cloud-developer-roadmap)  -  skills needed to build Agentforce integrations
+- [Comparing Salesforce CPQ and Revenue Cloud](/comparing-salesforce-cpq-to-revenue-cloud)  -  understand the platform before adding AI on top

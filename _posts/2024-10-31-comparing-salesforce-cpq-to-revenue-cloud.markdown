@@ -87,7 +87,7 @@ For most teams, the migration decision comes down to a few questions: How comple
 
 Ready to explore Revenue Cloud further? Here are some resources to continue your journey:
 
-- [Set up your free Revenue Cloud trial](/free-revenue-cloud-trial/)  -  Get hands-on with the platform
-- [Revenue Cloud pricing breakdown](/revenue-cloud-pricing-breakdown/)  -  Understand the investment
-- [Developer roadmap for Revenue Cloud](/revenue-cloud-developer-roadmap/)  -  Skills and career path for technical teams
-- [Best CPQ tools for Salesforce](/best-cpq-tools-for-salesforce/)  -  Compare all options including Revenue Cloud, legacy CPQ, and third-party solutions
+- [Set up your free Revenue Cloud trial](/free-revenue-cloud-trial)  -  Get hands-on with the platform
+- [Revenue Cloud pricing breakdown](/revenue-cloud-pricing-breakdown)  -  Understand the investment
+- [Developer roadmap for Revenue Cloud](/revenue-cloud-developer-roadmap)  -  Skills and career path for technical teams
+- [Best CPQ tools for Salesforce](/best-cpq-tools-for-salesforce)  -  Compare all options including Revenue Cloud, legacy CPQ, and third-party solutions

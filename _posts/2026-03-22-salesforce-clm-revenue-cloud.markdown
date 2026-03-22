@@ -29,7 +29,7 @@ Salesforce CLM in the Revenue Cloud context manages:
 
 ## Enabling CLM in Your Org
 
-CLM requires several setup steps in Salesforce Setup. If you're working in a trial org, these are covered in the [free Revenue Cloud trial guide](/free-revenue-cloud-trial/). The core settings to enable:
+CLM requires several setup steps in Salesforce Setup. If you're working in a trial org, these are covered in the [free Revenue Cloud trial guide](/free-revenue-cloud-trial). The core settings to enable:
 
 **Setup → Contract Lifecycle Management → General Settings:**
 1. Enable **Salesforce Contracts**
@@ -97,6 +97,6 @@ Getting this handoff right  -  particularly from order to contract  -  is where 
 
 ## Next Steps
 
-- [Free Revenue Cloud trial setup](/free-revenue-cloud-trial/)  -  includes the CLM enable steps with direct org links
-- [Revenue Cloud data model](/salesforce-revenue-cloud-data-model/)  -  understand how Contract relates to other core objects
-- [Comparing Salesforce CPQ and Revenue Cloud](/comparing-salesforce-cpq-to-revenue-cloud/)  -  see how CLM coverage compares between the two platforms
+- [Free Revenue Cloud trial setup](/free-revenue-cloud-trial)  -  includes the CLM enable steps with direct org links
+- [Revenue Cloud data model](/salesforce-revenue-cloud-data-model)  -  understand how Contract relates to other core objects
+- [Comparing Salesforce CPQ and Revenue Cloud](/comparing-salesforce-cpq-to-revenue-cloud)  -  see how CLM coverage compares between the two platforms

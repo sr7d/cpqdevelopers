@@ -53,4 +53,4 @@ In conclusion, Salesforce CPQ offers a powerful feature that allows you to creat
 
 In Salesforce Revenue Cloud, similar functionality is achieved through **Product Bundles** with saved configurations. Revenue Cloud's Product Configurator provides a more modern approach to bundling products with built-in validation rules and pricing.
 
-To learn how bundles work in Revenue Cloud, see: [How to Create a Product Bundle in Salesforce Revenue Cloud](/how-to-create-a-product-bundle-in-salesforce-rlm/) 
+To learn how bundles work in Revenue Cloud, see: [How to Create a Product Bundle in Salesforce Revenue Cloud](/how-to-create-a-product-bundle-in-salesforce-rlm) 

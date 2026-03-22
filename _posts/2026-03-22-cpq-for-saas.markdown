@@ -23,7 +23,7 @@ Here's where Revenue Cloud genuinely fits SaaS  -  and where it still has rough 
 
 Revenue Cloud handles usage-based billing natively. You define usage tiers, rate cards, and rollup logic; Revenue Cloud tracks usage events and calculates charges at billing time. This is a significant improvement over legacy CPQ, which required workarounds or Salesforce Billing extensions to handle anything beyond flat-rate subscriptions.
 
-For teams selling consumption-based products (API calls, seats above a floor, storage tiers), this is a genuine win. See the [usage-based selling guide](/usage-based-selling-in-revenue-cloud/) for configuration details.
+For teams selling consumption-based products (API calls, seats above a floor, storage tiers), this is a genuine win. See the [usage-based selling guide](/usage-based-selling-in-revenue-cloud) for configuration details.
 
 ### Subscription Amendments
 
@@ -72,6 +72,6 @@ For smaller SaaS teams that mainly need clean quote PDFs and basic subscription 
 
 ## Next Steps
 
-- [Quote-to-Cash software for Revenue Cloud teams](/quote-to-cash-software-revenue-cloud/)  -  full Q2C stack breakdown
-- [Usage-based selling in Revenue Cloud](/usage-based-selling-in-revenue-cloud/)  -  configuration guide
-- [Free Revenue Cloud trial](/free-revenue-cloud-trial/)  -  test the SaaS use cases yourself
+- [Quote-to-Cash software for Revenue Cloud teams](/quote-to-cash-software-revenue-cloud)  -  full Q2C stack breakdown
+- [Usage-based selling in Revenue Cloud](/usage-based-selling-in-revenue-cloud)  -  configuration guide
+- [Free Revenue Cloud trial](/free-revenue-cloud-trial)  -  test the SaaS use cases yourself

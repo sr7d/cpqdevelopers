@@ -89,4 +89,4 @@ If you're interested in exploring other CPQ APIs and functionality, you can acce
 
 Revenue Cloud uses **Connect REST APIs** instead of the legacy CPQ Calculator API. The architecture is fundamentally different  -  Revenue Cloud APIs are built on Salesforce's modern Connect framework, offering better performance and native integration with Flows.
 
-For a complete guide to Revenue Cloud APIs, see: [Revenue Cloud API Tutorial  -  A Developer's Guide](/revenue-cloud-api-tutorial/)
+For a complete guide to Revenue Cloud APIs, see: [Revenue Cloud API Tutorial  -  A Developer's Guide](/revenue-cloud-api-tutorial)
