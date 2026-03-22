@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to create a product bundle in Salesforce Revenue Cloud
-description: Learn the essentials of setting up a product in Salesforce Revenue Cloud. This guide takes you step by step through creating attribute picklists, assigning them to attributes, and organizing them into categories. We'll also cover how to build a product catalog with the necessary categories and product classifications, setting up your product management.
+description: How to create a product bundle in Salesforce Revenue Cloud. Covers attribute picklists, product catalog setup, categories, product classifications, and organizing bundles in the Revenue Cloud product catalog.
 date: 2024-08-29 15:01:35 +0300
 author: admin
 image: /images/RevenueCloudProductConfig.png

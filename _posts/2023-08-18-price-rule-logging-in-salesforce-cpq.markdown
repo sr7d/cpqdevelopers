@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Price Rule Logging in Salesforce CPQ
+title: Price Rule Logging and Debugging in Salesforce CPQ
 description: How to implement price rule logging in Salesforce CPQ  -  create a rich text field, track changes with an Autolaunched Flow, and automate logging to speed up debugging.
 date: 2023-10-19 15:01:35 +0300
 author: admin
@@ -100,4 +100,4 @@ If you find the process of implementing price rule logging complex or time-consu
 
 Revenue Cloud uses **Pricing Procedures** instead of CPQ Price Rules. Pricing Procedures have built-in debug logging capabilities through the Expression Set framework, making it easier to trace pricing calculations without custom solutions.
 
-For an overview of Revenue Cloud's pricing architecture and setup, see: [Salesforce Revenue Cloud Setup Guide](/salesforce-revenue-cloud-setup-guide/)
+For an overview of Revenue Cloud's pricing architecture and setup, see: [Salesforce Revenue Cloud Trial Setup Guide](/free-revenue-cloud-trial/)

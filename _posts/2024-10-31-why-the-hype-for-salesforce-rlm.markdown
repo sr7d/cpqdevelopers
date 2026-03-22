@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Why the hype about Revenue Lifecycle Management (RLM)
-description: Explore why the Salesforce Partner Ecosystem is excited about Revenue Lifecycle Management  -  what's new, what's different from CPQ, and why it matters for the platform.
+title: "Salesforce RLM: Revenue Lifecycle Management Explained"
+description: What is Salesforce Revenue Cloud (RLM)? Understand what Revenue Lifecycle Management is, how it differs from legacy Salesforce CPQ, and why it matters for developers, admins, and partners.
 date: 2024-10-31 15:01:35 +0300
 author: mihir_mehta
 image: /images/salesforce_projection.png

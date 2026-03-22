@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Limit Selection of Products by Account
+title: Limit Product Selection by Account in Salesforce CPQ
 description: Learn how to control product access by account type in Salesforce CPQ with search filters, multi-select pick lists, and formula fields.
 date: 2023-08-18 15:01:35 +0300
 author: admin

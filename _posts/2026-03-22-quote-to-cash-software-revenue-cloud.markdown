@@ -50,7 +50,7 @@ Developers can extend configuration logic via Apex, custom LWCs, or the Revenue 
 
 The pricing waterfall in Revenue Cloud is composable  -  you build price rules (Price Adjustments, Price Schedules, Attribute-Based Pricing) and the system evaluates them in sequence. The waterfall testing tool lets you simulate pricing scenarios before deploying to production.
 
-For usage-based pricing specifically, Revenue Cloud handles usage events and rollups natively. See the [usage-based selling guide](/usage-based-selling-in-salesforce-revenue-cloud/) for setup.
+For usage-based pricing specifically, Revenue Cloud handles usage events and rollups natively. See the [usage-based selling guide](/usage-based-selling-in-revenue-cloud/) for setup.
 
 ---
 
@@ -70,7 +70,7 @@ Legacy CPQ had pre-built quote templates and DocuSign integration from day one. 
 
 **Revenue Cloud coverage: Good.**
 
-Approval workflows are configured via standard Salesforce Approval Processes. Contract Lifecycle Management (CLM) handles document negotiation and redlining. See the [Salesforce CLM guide](/salesforce-contract-lifecycle-management-revenue-cloud/) for detail on enabling and configuring CLM.
+Approval workflows are configured via standard Salesforce Approval Processes. Contract Lifecycle Management (CLM) handles document negotiation and redlining. See the [Salesforce CLM guide](/salesforce-clm-revenue-cloud/) for detail on enabling and configuring CLM.
 
 ---
 
@@ -125,5 +125,5 @@ A practical Revenue Cloud Q2C stack looks like this:
 ## Next Steps
 
 - [Free Revenue Cloud trial](/free-revenue-cloud-trial/)  -  configure your own Q2C environment
-- [Salesforce CLM in Revenue Cloud](/salesforce-contract-lifecycle-management-revenue-cloud/)  -  deep dive on the negotiate/approve stage
+- [Salesforce CLM in Revenue Cloud](/salesforce-clm-revenue-cloud/)  -  deep dive on the negotiate/approve stage
 - [Comparing Salesforce CPQ and Revenue Cloud](/comparing-salesforce-cpq-to-revenue-cloud/)  -  understand the migration trade-offs

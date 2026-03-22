@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Deployment Script Generator
+title: Data Deployment Script Generator for Salesforce CPQ
 description: This tool allows you to create a reusable data deployment script using anonymous apex. Follow these steps to create your script.
 date: 2024-06-15 10:00:00 +0300
 author: admin

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Revenue Cloud Developer Roadmap - Skills You Actually Need
-description: A practical guide to the skills needed for Salesforce Revenue Cloud work. Focus on what matters in real implementations, not certification checklists.
+title: Revenue Cloud Developer Roadmap - Skills and Training Guide
+description: Salesforce Revenue Cloud developer and CPQ architect skills guide. Covers Trailhead paths, training resources, and the technical skills that matter in real Revenue Cloud implementations.
 date: 2025-01-26 15:01:35 +0300
 author: admin
 image: /images/revCloudRoadmap.png

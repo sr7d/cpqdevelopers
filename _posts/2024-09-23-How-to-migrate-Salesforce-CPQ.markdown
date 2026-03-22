@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How to Migrate to Salesforce CPQ
-description: Best practices for Salesforce CPQ data migration  -  field mapping, data cleansing, phased rollouts, and tool recommendations for teams moving from spreadsheets, legacy CPQ, or another CRM.
+title: How to Migrate from Salesforce CPQ to Revenue Cloud
+description: Best practices for Salesforce CPQ migration and implementation - field mapping, data cleansing, phased rollouts, and tool recommendations for teams replacing legacy CPQ with Revenue Cloud.
 date: 2024-08-29 15:01:35 +0300
 author: admin
 image: /images/migration.png
