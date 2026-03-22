@@ -8,6 +8,7 @@ image: /images/RevCPQCompare.png
 image_caption:
 tags: [revenue-cloud, legacy-cpq]
 featured:
+silkquote_inline: true
 video_embed:
 ---
 # Best CPQ Tools for Salesforce in 2026

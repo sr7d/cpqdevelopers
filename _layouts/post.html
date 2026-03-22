@@ -87,6 +87,10 @@ layout: default
       {{ content }}
     </div>
 
+    {% unless page.url contains 'free-revenue-cloud-trial' or page.silkquote_inline %}
+      {% include silkquote-callout.html %}
+    {% endunless %}
+
     {% if page.gate == true %}
       {% include content-gate.html %}
     {% endif %}

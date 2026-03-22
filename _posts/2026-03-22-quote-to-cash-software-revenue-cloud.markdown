@@ -8,6 +8,7 @@ image: /images/RevCPQCompare.png
 image_caption:
 tags: [revenue-cloud]
 featured:
+silkquote_inline: true
 video_embed:
 ---
 # Quote-to-Cash Software for Salesforce Revenue Cloud Teams

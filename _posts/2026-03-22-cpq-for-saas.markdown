@@ -8,6 +8,7 @@ image: /images/RevCPQCompare.png
 image_caption:
 tags: [revenue-cloud]
 featured:
+silkquote_inline: true
 video_embed:
 ---
 # CPQ for SaaS: What Salesforce Revenue Cloud Gets Right (and Wrong)
