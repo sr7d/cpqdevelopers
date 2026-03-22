@@ -14,7 +14,6 @@ video_embed:
 
 Quote-to-cash (Q2C) describes the end-to-end revenue process from initial product configuration through cash collected. For teams on Salesforce Revenue Cloud, most of the Q2C workflow is handled natively  -  but knowing exactly where Revenue Cloud's coverage starts and stops saves you from building the wrong thing.
 
----
 
 ## The Q2C Stages
 
@@ -32,7 +31,6 @@ Quote-to-cash (Q2C) describes the end-to-end revenue process from initial produc
 
 Revenue Cloud has strong native coverage for most of these stages. Let's go through where it's strong and where you'll need to add something.
 
----
 
 ## Configure
 
@@ -42,7 +40,6 @@ The product configurator in Revenue Cloud handles bundles, options, cardinality 
 
 Developers can extend configuration logic via Apex, custom LWCs, or the Revenue Cloud API. See the [product configurator guide](/salesforce-rca-product-configurator/) for detail.
 
----
 
 ## Price
 
@@ -52,7 +49,6 @@ The pricing waterfall in Revenue Cloud is composable  -  you build price rules (
 
 For usage-based pricing specifically, Revenue Cloud handles usage events and rollups natively. See the [usage-based selling guide](/usage-based-selling-in-revenue-cloud/) for setup.
 
----
 
 ## Quote
 
@@ -64,7 +60,6 @@ Legacy CPQ had pre-built quote templates and DocuSign integration from day one. 
 
 {% include silkquote-callout.html %}
 
----
 
 ## Negotiate / Approve
 
@@ -72,7 +67,6 @@ Legacy CPQ had pre-built quote templates and DocuSign integration from day one. 
 
 Approval workflows are configured via standard Salesforce Approval Processes. Contract Lifecycle Management (CLM) handles document negotiation and redlining. See the [Salesforce CLM guide](/salesforce-clm-revenue-cloud/) for detail on enabling and configuring CLM.
 
----
 
 ## Order
 
@@ -80,7 +74,6 @@ Approval workflows are configured via standard Salesforce Approval Processes. Co
 
 Revenue Cloud's order management converts quotes to orders and supports amendments, renewals, and cancellations on active assets. The asset-based ordering model handles mid-cycle changes cleanly  -  an area where legacy CPQ often required custom workarounds.
 
----
 
 ## Fulfill
 
@@ -88,7 +81,6 @@ Revenue Cloud's order management converts quotes to orders and supports amendmen
 
 Dynamic Revenue Orchestration (DRO) decomposes orders into fulfillment SKUs and coordinates across ERP and external systems. Most relevant for companies with physical product + service combinations or multi-system delivery. See the [Revenue Cloud data model](/salesforce-revenue-cloud-data-model/) for how orders connect to fulfillment.
 
----
 
 ## Invoice / Bill
 
@@ -96,7 +88,6 @@ Dynamic Revenue Orchestration (DRO) decomposes orders into fulfillment SKUs and 
 
 Revenue Cloud's integrated billing handles one-time charges, recurring subscriptions, usage-based billing, and milestone billing. The [billing setup guide](/revenue-cloud-billing-setup/) covers the configuration steps.
 
----
 
 ## Collect / Revenue Recognition
 
@@ -104,7 +95,6 @@ Revenue Cloud's integrated billing handles one-time charges, recurring subscript
 
 Payment collection integrates with Salesforce Billing but typically connects to a payment processor (Stripe, Adyen, etc.) via the API or a pre-built connector. Revenue recognition (ASC 606 compliance) is partially handled  -  most enterprise teams still connect to a dedicated revenue management system (Zuora Revenue, NetSuite ARM) for the full recognition calculation.
 
----
 
 ## The Q2C Software Stack for Revenue Cloud Teams
 
@@ -120,7 +110,6 @@ A practical Revenue Cloud Q2C stack looks like this:
 | Payment collection | Stripe / payment processor via API |
 | Revenue recognition | RevCloud + external RevRec system |
 
----
 
 ## Next Steps
 

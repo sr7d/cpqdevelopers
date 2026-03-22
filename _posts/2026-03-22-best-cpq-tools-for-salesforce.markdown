@@ -16,7 +16,6 @@ If you're evaluating CPQ solutions for a Salesforce org, the market looks very d
 
 Here's a clear-eyed breakdown of the options.
 
----
 
 ## Salesforce Revenue Cloud (Recommended for New Implementations)
 
@@ -38,7 +37,6 @@ Here's a clear-eyed breakdown of the options.
 - Native quote document generation is limited  -  most teams add a quoting layer
 - Still maturing; some legacy CPQ features don't have direct equivalents yet
 
----
 
 ## Salesforce CPQ (Legacy  -  Existing Customers Only)
 
@@ -58,7 +56,6 @@ Here's a clear-eyed breakdown of the options.
 - Managed package architecture limits platform flexibility
 - Migration to Revenue Cloud is eventually required
 
----
 
 ## Third-Party CPQ Solutions (Conga, DealHub, Apttus/Conga)
 
@@ -75,13 +72,11 @@ Several ISV CPQ tools work alongside Salesforce rather than replacing it. These 
 - You're on a non-Salesforce CRM and need CPQ that integrates in
 - Deal complexity is low and you want a faster/cheaper deployment
 
----
 
 ## The Free Option: SilkQuote
 
 {% include silkquote-callout.html %}
 
----
 
 ## How to Choose
 
@@ -93,7 +88,6 @@ Several ISV CPQ tools work alongside Salesforce rather than replacing it. These 
 | Non-Salesforce CRM | DealHub or Conga |
 | SaaS team, fast deployment | DealHub or SilkQuote |
 
----
 
 ## Next Steps
 

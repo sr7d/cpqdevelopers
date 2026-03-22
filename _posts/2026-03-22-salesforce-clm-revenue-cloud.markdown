@@ -14,7 +14,6 @@ video_embed:
 
 Contract Lifecycle Management (CLM) in Salesforce Revenue Cloud handles the full journey from initial contract creation through execution, renewal, and termination. It's one of the first features you enable when setting up a Revenue Cloud org  -  and understanding how it fits into the broader Revenue Cloud data model is key to building correctly.
 
----
 
 ## What CLM Covers
 
@@ -27,7 +26,6 @@ Salesforce CLM in the Revenue Cloud context manages:
 - **Version control**  -  track redlines, amendments, and negotiated changes
 - **Contract status lifecycle**  -  Draft → In Negotiation → Executed → Active → Expired/Renewed
 
----
 
 ## Enabling CLM in Your Org
 
@@ -43,7 +41,6 @@ CLM requires several setup steps in Salesforce Setup. If you're working in a tri
 2. Enable **Document Templates Export**
 3. Enable **Design Document Templates in Salesforce**
 
----
 
 ## Key Objects
 
@@ -57,7 +54,6 @@ CLM requires several setup steps in Salesforce Setup. If you're working in a tri
 | `ClauseVersion` | Tracks versions and approval status of individual clauses |
 | `ContractDocumentVersion` | Represents a specific generated version of a contract document |
 
----
 
 ## Template Configuration
 
@@ -71,7 +67,6 @@ Document templates in Revenue Cloud CLM are built in Salesforce's template desig
 
 Merge fields support related object traversal. For example, to pull in line item data you'd reference `{!ContractLineItem.Product2.Name}` within a repeating section.
 
----
 
 ## Approval Workflows
 
@@ -86,7 +81,6 @@ Approval process entry criteria are set using standard formula fields on the `Co
 
 **Tip for developers:** The Context Service allows you to programmatically evaluate which approval route applies using Apex or Flow. This is more flexible than standard approval entry criteria and supports complex conditional routing.
 
----
 
 ## Integration with Revenue Cloud Order Flow
 
@@ -100,7 +94,6 @@ CLM sits downstream of quoting and upstream of fulfillment in the Revenue Cloud 
 
 Getting this handoff right  -  particularly from order to contract  -  is where most implementations require custom Flow or Apex to map fields correctly.
 
----
 
 ## Next Steps
 

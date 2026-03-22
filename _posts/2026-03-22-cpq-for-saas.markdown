@@ -16,7 +16,6 @@ SaaS pricing is structurally different from traditional product selling. Subscri
 
 Here's where Revenue Cloud genuinely fits SaaS  -  and where it still has rough edges.
 
----
 
 ## What Revenue Cloud Gets Right for SaaS
 
@@ -40,7 +39,6 @@ Revenue Cloud supports contract alignment across multiple subscriptions. When a 
 
 Renewal management in Revenue Cloud is tied to the Asset object. As assets approach their end date, you can trigger renewal flows via Process Builder or Flow. Revenue Cloud doesn't have a dedicated "renewal console" the way some ISV solutions do, but the data model supports automated renewal quoting cleanly.
 
----
 
 ## Where Revenue Cloud Still Falls Short for SaaS
 
@@ -64,7 +62,6 @@ This is improving with each Salesforce release, but if your sales process involv
 
 SaaS companies often have relatively straightforward product catalogs but complex pricing models (ramp deals, multi-year discounts, freemium-to-paid upgrade paths). Revenue Cloud's pricing engine is fully capable of handling these  -  but it takes more setup time than you'd expect if you're coming from a simpler quoting tool.
 
----
 
 ## The Honest Bottom Line
 
@@ -72,7 +69,6 @@ For SaaS companies with more than ~50 reps, complex subscriptions, or usage-base
 
 For smaller SaaS teams that mainly need clean quote PDFs and basic subscription tracking: the implementation overhead may not be justified. Evaluate whether a lighter quoting tool (including free options like [SilkQuote](https://silkquote.com)) meets your needs first.
 
----
 
 ## Next Steps
 

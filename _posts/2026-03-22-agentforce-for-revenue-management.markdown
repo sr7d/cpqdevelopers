@@ -16,7 +16,6 @@ Salesforce's Agentforce is the AI agent layer built on top of the Einstein and D
 
 For Revenue Cloud teams, this creates some genuinely useful possibilities. It also creates a fair amount of hype. Here's a grounded breakdown of where Agentforce intersects with revenue management today.
 
----
 
 ## What Agentforce Actually Is
 
@@ -28,7 +27,6 @@ Agentforce agents are built with:
 
 Agents run in the context of a specific user and object, with standard Salesforce permission enforcement. They're not general-purpose  -  they're scoped to the tasks you explicitly configure them to handle.
 
----
 
 ## Where Agentforce Is Useful in Revenue Management
 
@@ -56,7 +54,6 @@ Agentforce can be configured to proactively alert account teams about upcoming r
 
 **Current status:** Usable today with Data Cloud. More involved to configure than the simpler Q&A use cases.
 
----
 
 ## What's Still Roadmap (as of Early 2026)
 
@@ -68,7 +65,6 @@ The idea of an Agentforce agent that can autonomously configure a product, apply
 
 Using AI to assist in real-time contract negotiation (flagging non-standard terms, suggesting fallback language, recommending approval routes) is an active area of development. Some CLM vendors are shipping this today; Salesforce's native CLM + Agentforce integration for negotiation assistance is still maturing.
 
----
 
 ## What Developers Need to Know
 
@@ -80,7 +76,6 @@ Agentforce agents are built declaratively (Topics, Actions, Instructions in the 
 
 The Einstein Trust Layer masks sensitive data before it reaches the LLM. For revenue data this matters  -  pricing, deal terms, and customer financials should be flagged as sensitive fields so they're masked in transit.
 
----
 
 ## The Realistic Near-Term Value
 
@@ -92,7 +87,6 @@ For most Revenue Cloud teams in 2026, the highest-ROI Agentforce use cases are:
 
 Full autonomous revenue workflows are worth watching, but budget for incremental automation rather than full replacement of human judgment in the revenue process.
 
----
 
 ## Next Steps
 

@@ -41,7 +41,6 @@ By offering tailored CRM suites for these industries, Salesforce enables organiz
 
 > Source: IDC worldwide
 
----
 
 ## Why Salesforce CPQ
 
@@ -63,7 +62,6 @@ These companies built Managed Packages to handle this capability on the Salesfor
 
 By bringing CPQ in-house, Salesforce solidified its position as a one-stop shop for sales organizations, further cementing its dominance in the CRM and business software market.
 
----
 
 ## Why Salesforce RLM
 
@@ -78,7 +76,6 @@ Steelbrick CPQ worked well for small and mid-market customers, but there are lim
 
 Salesforce realized this quickly and while they kept updating and adding new features to the Salesforce CPQ (aka Steelbrick) package, they have been working parallel to build a completely native solution from the ground up using more modern tools (**Flows, Lightning App Builder, Omnistudio**) that were not available when Steelbrick was born. Welcome to the world  -  **Salesforce Revenue Lifecycle Management (RLM).**
 
----
 
 The product, though Generally Available, is still in the nascent stage with very few implementations underway. As much as I know Salesforce working on the Salesforce Platform for the last 12+ years, there will be some hiccups, but the Revenue Cloud team will heavily invest in identifying and fixing any gaps and issues and deliver a robust product.
 
@@ -92,6 +89,5 @@ For organizations considering Revenue Cloud, it may be wise to:
 
 As Salesforce continues to invest in and refine Revenue Cloud, we can expect to see increased adoption and success stories emerging in the coming months and years.
 
----
 
 Thanks for reading.
