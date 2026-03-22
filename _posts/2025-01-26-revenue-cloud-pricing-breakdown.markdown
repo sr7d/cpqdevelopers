@@ -92,7 +92,7 @@ Salesforce offers additional capabilities that can be added to your Revenue Clou
 - Full visibility into usage-based charges
 - Helps reduce billing surprises for customers
 
-For specific add-on pricing, contact your Salesforce Account Executive—these are quoted based on your specific requirements.
+For specific add-on pricing, contact your Salesforce Account Executive - these are quoted based on your specific requirements.
 
 ## Who Needs Licenses
 
@@ -118,7 +118,7 @@ If you're coming from Salesforce CPQ, here's how the pricing compares:
 | Legacy CPQ | $75-150/user/month | + $75/user/month | + Additional |
 | Revenue Cloud Advanced | $200/user/month | Included | Included |
 
-For organizations that needed CPQ + Billing + CLM, Revenue Cloud Advanced often comes out comparable or better on total cost—and you get a unified platform instead of multiple integrated products.
+For organizations that needed CPQ + Billing + CLM, Revenue Cloud Advanced often comes out comparable or better on total cost - and you get a unified platform instead of multiple integrated products.
 
 ## Factors That Affect Your Final Price
 

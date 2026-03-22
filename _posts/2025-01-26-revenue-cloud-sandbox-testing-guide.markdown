@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Revenue Cloud Sandbox Guide - Testing and Development Best Practices
+title: Revenue Cloud Sandbox and Testing Guide
 description: Learn how to create and use Salesforce sandboxes for Revenue Cloud testing. This guide covers sandbox types, data management strategies, and best practices for developing and testing your Revenue Cloud implementation.
 date: 2025-01-26 15:01:35 +0300
 author: admin
@@ -52,7 +52,7 @@ Salesforce offers four sandbox types, each with different capabilities and refre
 
 **Best For**: Testing with realistic data, UAT environments
 
-**Revenue Cloud Limitation**: Revenue Cloud data is **not automatically copied** to Partial Copy sandboxes. You must explicitly configure sandbox templates to include Revenue Cloud objects, and even then, the 5 GB limit and 10,000 records per object cap can be insufficient for production-like testing. Revenue Cloud implementations are extremely data-heavy—product catalogs, pricing configurations, and attribute definitions all live as data records, not metadata.
+**Revenue Cloud Limitation**: Revenue Cloud data is **not automatically copied** to Partial Copy sandboxes. You must explicitly configure sandbox templates to include Revenue Cloud objects, and even then, the 5 GB limit and 10,000 records per object cap can be insufficient for production-like testing. Revenue Cloud implementations are extremely data-heavy - product catalogs, pricing configurations, and attribute definitions all live as data records, not metadata.
 
 ### Full Copy Sandbox
 
@@ -64,7 +64,7 @@ Salesforce offers four sandbox types, each with different capabilities and refre
 
 **Best For**: Performance testing, load testing, final staging before deployment
 
-**Revenue Cloud Recommendation**: If you have access to a Full Copy sandbox, **use it for Revenue Cloud testing**. This is the only sandbox type that reliably captures the complete Revenue Cloud data model—product catalogs, pricing procedures, attribute definitions, configuration rules, and all the complex object relationships. The 29-day refresh limit is a constraint, but the data completeness is worth it.
+**Revenue Cloud Recommendation**: If you have access to a Full Copy sandbox, **use it for Revenue Cloud testing**. This is the only sandbox type that reliably captures the complete Revenue Cloud data model - product catalogs, pricing procedures, attribute definitions, configuration rules, and all the complex object relationships. The 29-day refresh limit is a constraint, but the data completeness is worth it.
 
 ## Sandbox Allocations by Edition
 
@@ -72,11 +72,11 @@ Your sandbox allocation depends on your Salesforce edition ([see official alloca
 
 | Edition | Developer | Developer Pro | Partial Copy | Full Copy |
 |---------|-----------|---------------|--------------|-----------|
-| Enterprise | 25 | — | 1 | Add-on |
+| Enterprise | 25 |  -  | 1 | Add-on |
 | Unlimited | 100 | 5 | 1 | 1 |
 | Performance | 30 | 5 | 1 | 1 |
 
-**Note**: Enterprise Edition doesn't include Developer Pro sandboxes or Full Copy sandboxes by default—these require additional purchase.
+**Note**: Enterprise Edition doesn't include Developer Pro sandboxes or Full Copy sandboxes by default - these require additional purchase.
 
 ## Creating a Revenue Cloud Sandbox
 
@@ -101,12 +101,12 @@ Your sandbox allocation depends on your Salesforce edition ([see official alloca
 
 Before diving into data management, you need to understand why Revenue Cloud is different from standard Salesforce implementations.
 
-**Revenue Cloud stores configuration as data, not metadata.** Your product catalog, pricing procedures, attribute definitions, configuration rules, and selling models are all stored as records in custom objects—not as metadata that automatically copies with every sandbox. This means:
+**Revenue Cloud stores configuration as data, not metadata.** Your product catalog, pricing procedures, attribute definitions, configuration rules, and selling models are all stored as records in custom objects - not as metadata that automatically copies with every sandbox. This means:
 
 - Change Sets won't deploy your Revenue Cloud configuration
 - Partial Copy sandboxes won't include this data unless you explicitly configure templates
 - Even with templates, the 10,000 record limit per object can truncate large product catalogs
-- Object relationships are complex—Price Books must exist before Products can reference them
+- Object relationships are complex - Price Books must exist before Products can reference them
 
 **My recommendation**: If you have a Full Copy sandbox available, prioritize it for Revenue Cloud work. If you're limited to Partial Copy, be prepared to invest significant effort in sandbox template configuration and data validation.
 
@@ -214,7 +214,7 @@ Use Full Copy sandboxes if available, otherwise Partial Copy with validated temp
 - Load testing with production data volumes
 - Performance validation of pricing calculations
 - Stress testing quote generation with large bundles
-- Do not attempt performance testing on Partial Copy—the limited data will give misleading results
+- Do not attempt performance testing on Partial Copy - the limited data will give misleading results
 
 ## Deployment from Sandbox to Production
 
@@ -262,7 +262,7 @@ Salesforce DevOps Center provides:
 
 ### Issue: Revenue Cloud Data Missing After Refresh
 
-**Solution**: For Partial Copy sandboxes, verify your sandbox template includes all required Revenue Cloud objects. Check that you didn't hit the 10,000 record limit on any object. For Developer/Developer Pro sandboxes, remember that no data copies—you'll need to recreate or import it.
+**Solution**: For Partial Copy sandboxes, verify your sandbox template includes all required Revenue Cloud objects. Check that you didn't hit the 10,000 record limit on any object. For Developer/Developer Pro sandboxes, remember that no data copies - you'll need to recreate or import it.
 
 ### Issue: Missing Permission Sets
 
@@ -308,9 +308,9 @@ Here are the official Salesforce resources for sandbox management:
 
 Revenue Cloud's data-heavy architecture makes sandbox strategy more important than typical Salesforce implementations. The key takeaways:
 
-1. **Use Full Copy sandboxes if you have them**—they're the only type that reliably captures complete Revenue Cloud data
+1. **Use Full Copy sandboxes if you have them** - they're the only type that reliably captures complete Revenue Cloud data
 2. **Partial Copy requires careful template configuration** and validation that your data actually copied
-3. **Change Sets won't deploy Revenue Cloud configuration**—you need Data Loader or specialized tools
+3. **Change Sets won't deploy Revenue Cloud configuration** - you need Data Loader or specialized tools
 4. **Don't underestimate the data seeding effort** if you're working with Developer sandboxes
 
 Plan your sandbox strategy early in your implementation. The 29-day Full Copy refresh limit means you need to coordinate testing windows carefully.

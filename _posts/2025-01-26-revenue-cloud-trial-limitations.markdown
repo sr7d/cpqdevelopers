@@ -36,7 +36,7 @@ A free option for learning, but with important caveats:
 - Enterprise Edition-like features
 - Limited storage but sufficient for learning
 
-**Important**: Salesforce states that Promo Edition orgs may expire or become unavailable without notice. Treat these as throwaway environments—don't rely on them for long-term work or store anything you can't recreate. They're great for experimentation, but export your configurations regularly.
+**Important**: Salesforce states that Promo Edition orgs may expire or become unavailable without notice. Treat these as throwaway environments - don't rely on them for long-term work or store anything you can't recreate. They're great for experimentation, but export your configurations regularly.
 
 ### 3. Partner Demo Orgs (SDO)
 
@@ -104,7 +104,7 @@ Promo Edition orgs have limited storage ([see official limits](https://help.sale
 | Trial (30-day) | Limited | Limited |
 | Promo Edition | 5 MB data | 20 MB files |
 
-**Impact**: You cannot test with production-level data volumes. Don't use trial environments for performance testing—the results won't be meaningful.
+**Impact**: You cannot test with production-level data volumes. Don't use trial environments for performance testing - the results won't be meaningful.
 
 ### Time Constraints
 
@@ -196,7 +196,7 @@ If 30 days isn't enough:
 For skill development (with caveats):
 
 1. Promo Edition orgs can expire or break without warning
-2. Treat them as disposable—export configurations you want to keep
+2. Treat them as disposable - export configurations you want to keep
 3. Great for experimentation, not for storing important work
 4. Create a new one if your current org becomes unavailable
 
@@ -261,8 +261,8 @@ Here are the official Salesforce resources for trial and Promo Edition orgs:
 
 ## Conclusion
 
-Trial environments give you enough to make an informed decision about Revenue Cloud. The main constraints are storage and time—you won't be able to test at production scale or evaluate long-term performance.
+Trial environments give you enough to make an informed decision about Revenue Cloud. The main constraints are storage and time - you won't be able to test at production scale or evaluate long-term performance.
 
-My advice: go in with a structured plan, focus on your most critical use cases first, and document everything. If you need more time, ask your Account Executive for an extension. For ongoing learning, Promo Edition orgs are available but remember they can expire without notice—treat them as throwaway environments.
+My advice: go in with a structured plan, focus on your most critical use cases first, and document everything. If you need more time, ask your Account Executive for an extension. For ongoing learning, Promo Edition orgs are available but remember they can expire without notice - treat them as throwaway environments.
 
 For a step-by-step guide to setting up your trial org, see our [Revenue Cloud Trial Setup Guide](/free-revenue-cloud-trial).

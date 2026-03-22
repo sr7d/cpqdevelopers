@@ -9,7 +9,7 @@ description: This site documents real-world Salesforce CPQ and Revenue Cloud imp
 # Author Global Settings
 author:
   author__name: Skylar Rhodes
-  author__bio: Hey, I'm Skylar Rhodes, a Salesforce Revenue Cloud CPQ Architect. I created cpqdevelopers to fill the void of information that developers, admins, and product owners face while navigating the complicated world of Salesforce Revenue. I hope you find this site an invaluable resource. Please feel free to reach out to me for collaboration, business inquiries, or just to say "Hi"!
+  author__bio: Hey, I'm Skylar Rhodes, a Salesforce Revenue Cloud CPQ Architect. I built cpqdevelopers because I couldn't find practical documentation when I needed it - trial org setup, real data models, working API examples, and honest migration guides. If you're a developer or admin navigating Revenue Cloud or CPQ, this site is for you.
   author__avatar: /images/01-1.jpg
 
  
@@ -21,8 +21,6 @@ menu__settings:
       submenu:
       - url: 'https://silkquote.com'
         title: 'SilkQuote'      
-    - title: 'Services'
-      url: '/services/'
     - title: 'Authors'
       url: '/authors/'
     - title: 'Contact'
@@ -33,13 +31,13 @@ menu__settings:
 # Hero Settings
 hero:
   hero__title: Salesforce Revenue Cloud &amp; CPQ
-  hero__description: Real-world architecture, performance remediation, and enterprise migrations.
-  hero__notice: "<strong>March 2025:</strong> Salesforce CPQ reached End of Sale. This site covers both Revenue Cloud (current), CPQ (legacy maintenance), and migration."
+  hero__description: Practical guides for developers and admins — trial org setup, data models, APIs, and CPQ migration.
+  hero__notice: "<strong>Salesforce CPQ reached End of Sale.</strong> This site covers Revenue Cloud setup, CPQ data models, migration, and developer APIs."
 #-------------------------------
 # Blog Settings
 blog:
   blog__title: Articles
-  blog__description: Read our industry case studies and how-to guides
+  blog__description: Step-by-step guides for Revenue Cloud org setup, CPQ data models, APIs, and migration
    # blog__call-to-action: Browse the articles below or go straight to  
 
 #-------------------------------
@@ -53,9 +51,9 @@ tag:
 #-------------------------------
 # Newsletter Settings (Buttondown)
 newsletter:
-  enable: true
-  title: Learn Revenue Cloud
-  description: Join hundreds of trailblazers getting the latest on Revenue Cloud features, CPQ migration strategies, and developer tips.
+  enable: false
+  title: Revenue Cloud for Developers
+  description: Join developers and admins getting practical Revenue Cloud guides - trial org setup, data models, API references, and CPQ migration walkthroughs.
   input_text: Your Email Address...
   button_text: Subscribe
   background_image: "/images/110.jpg"

@@ -38,8 +38,8 @@ permalink: /salesforce-cpq-data-model/
 <br>
 ## Key Objects
 
-- **Quote (SBQQ__Quote__c)** — The main container for pricing and product selections
-- **Quote Line (SBQQ__QuoteLine__c)** — Individual line items on a quote
-- **Product (Product2)** — Standard Salesforce product object, extended by CPQ
-- **Price Book Entry** — Links products to price books with list prices
-- **Quote Line Group (SBQQ__QuoteLineGroup__c)** — Groups related quote lines together
+- **Quote (SBQQ__Quote__c)**  -  The main container for pricing and product selections
+- **Quote Line (SBQQ__QuoteLine__c)**  -  Individual line items on a quote
+- **Product (Product2)**  -  Standard Salesforce product object, extended by CPQ
+- **Price Book Entry**  -  Links products to price books with list prices
+- **Quote Line Group (SBQQ__QuoteLineGroup__c)**  -  Groups related quote lines together

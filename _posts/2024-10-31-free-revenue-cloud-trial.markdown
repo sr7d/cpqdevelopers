@@ -88,7 +88,13 @@ After signing up, check your email for a message from Salesforce. Follow the ins
 
 ## Congratulations!
 
-Your trial org is now ready to go! Keep in mind that it will expire after 30 days, and you will need to repeat this process for a new org. If you found this article helpful, please share it with others who may benefit from it!
+Your trial org is now ready to go! Keep in mind that it will expire after 30 days, and you will need to repeat this process for a new org.
+
+## What's Next: Quoting
+
+Your Revenue Cloud environment is configured  -  the natural next question is how to quote. Revenue Cloud handles pricing and orchestration natively, but most teams need a quoting layer on top to generate customer-facing documents. [SilkQuote](https://silkquote.com) is a free AppExchange app built for Revenue Cloud that gives you professional quote documents without the setup overhead. Worth installing while your trial is fresh.
+
+If you found this article helpful, please share it with others who may benefit from it!
 
 <script>
   function isBusinessEmail(email) {

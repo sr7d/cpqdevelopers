@@ -88,7 +88,7 @@ Certifications can validate foundational knowledge and help with job application
 
 The skills you need depend on your role:
 
-**Implementation consultants** need broad exposure—multiple implementations, different industries, migration strategies, and the ability to adapt patterns to new situations. You'll see more variety but less depth in any single org.
+**Implementation consultants** need broad exposure - multiple implementations, different industries, migration strategies, and the ability to adapt patterns to new situations. You'll see more variety but less depth in any single org.
 
 **Revenue Cloud specialists at end-user organizations** go deep on one implementation. You'll know your product catalog intimately, understand the specific business rules, and own the ongoing optimization. You'll also deal more with integrations to internal systems and cross-functional stakeholders.
 

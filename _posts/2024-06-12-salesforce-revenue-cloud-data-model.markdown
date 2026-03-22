@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Salesforce Revenue Cloud Data Model
-description: This interactive diagram shows the data model for Salesforce Revenue Cloud. The architecture differs significantly from legacy CPQ, with a focus on product catalogs, attributes, and the new pricing framework.connect in the new architecture.
+description: An interactive diagram of the Salesforce Revenue Cloud data model. Covers how Product Catalog, Pricing, Sales Transaction, and Order objects relate  -  and how the architecture differs from legacy CPQ.
 date: 2024-06-12 10:00:00 +0300
 author: admin
 image: /images/revenueCloudDataModel.png
@@ -39,7 +39,7 @@ permalink: /salesforce-revenue-cloud-data-model/
 
 ## Key Differences from CPQ
 
-- **Product Catalog** — Centralized catalog structure with categories
-- **Product Classifications** — Attribute inheritance for product types
-- **Attribute-Based Configuration** — Flexible product configuration through attributes
-- **Pricing Procedures** — New pricing calculation engine replacing price rules
+- **Product Catalog**  -  Centralized catalog structure with categories
+- **Product Classifications**  -  Attribute inheritance for product types
+- **Attribute-Based Configuration**  -  Flexible product configuration through attributes
+- **Pricing Procedures**  -  New pricing calculation engine replacing price rules

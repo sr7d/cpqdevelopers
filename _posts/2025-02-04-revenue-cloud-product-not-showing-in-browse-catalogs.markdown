@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Product Not Showing in Browse Catalogs? Step-by-Step Fix Guide
+title: "Product Not Showing in Browse Catalogs: Fix Guide"
 description: Troubleshoot why your newly created product isn't appearing in the Browse Catalogs screen in Salesforce Revenue Cloud, with a complete checklist to resolve the issue.
 date: 2025-02-04 09:00:00 +0300
 author: admin

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why the hype about Revenue Lifecycle Management (RLM)
-description: Explore why the Salesforce Partner Ecosytem is so excited about the new devlopments of Revenue Lifecycle Management!
+description: Explore why the Salesforce Partner Ecosystem is excited about Revenue Lifecycle Management  -  what's new, what's different from CPQ, and why it matters for the platform.
 date: 2024-10-31 15:01:35 +0300
 author: mihir_mehta
 image: /images/salesforce_projection.png
@@ -76,7 +76,7 @@ Steelbrick CPQ worked well for small and mid-market customers, but there are lim
 - There are limits on the number of components that can be included in a product bundle.
 - There are limitations on the maximum number of line items allowed in a single quote, though this number is likely to be quite high.
 
-Salesforce realized this quickly and while they kept updating and adding new features to the Salesforce CPQ (aka Steelbrick) package, they have been working parallel to build a completely native solution from the ground up using more modern tools (**Flows, Lightning App Builder, Omnistudio**) that were not available when Steelbrick was born. Welcome to the world — **Salesforce Revenue Lifecycle Management (RLM).**
+Salesforce realized this quickly and while they kept updating and adding new features to the Salesforce CPQ (aka Steelbrick) package, they have been working parallel to build a completely native solution from the ground up using more modern tools (**Flows, Lightning App Builder, Omnistudio**) that were not available when Steelbrick was born. Welcome to the world  -  **Salesforce Revenue Lifecycle Management (RLM).**
 
 ---
 

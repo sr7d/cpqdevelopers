@@ -12,7 +12,7 @@ video_embed:
 ---
 # Revenue Cloud API Tutorial
 
-Revenue Cloud is API-first—everything in the UI is accessible programmatically. This guide covers authentication, key APIs, and practical examples. All verified against [official documentation](https://developer.salesforce.com/docs/atlas.en-us.revenue_lifecycle_management_dev_guide.meta/revenue_lifecycle_management_dev_guide/rlm_get_started.htm).
+Revenue Cloud is API-first - everything in the UI is accessible programmatically. This guide covers authentication, key APIs, and practical examples. All verified against [official documentation](https://developer.salesforce.com/docs/atlas.en-us.revenue_lifecycle_management_dev_guide.meta/revenue_lifecycle_management_dev_guide/rlm_get_started.htm).
 
 **Postman Collections**: There's a [Subscription Management collection](https://www.postman.com/salesforce-developers/salesforce-developers/collection/b32utmu/salesforce-platform-apis) in the Salesforce Platform APIs ([setup guide](https://developer.salesforce.com/docs/revenue/subscription-management/guide/postmanSetup.html)). A comprehensive RLM collection hasn't been published yet. Legacy CPQ has a [separate collection](https://www.postman.com/salesforce-developers/workspace/salesforce-developers/folder/12721794-18c19817-3a82-4403-92bc-d96276452c77).
 
@@ -102,7 +102,7 @@ Serve catalog definitions. [Docs](https://developer.salesforce.com/docs/atlas.en
 
 ### ConnectApi (Apex)
 
-Native Apex access to these APIs—no auth handling needed. [Docs](https://developer.salesforce.com/docs/atlas.en-us.revenue_lifecycle_management_dev_guide.meta/revenue_lifecycle_management_dev_guide/billing_connect_api_namespace.htm)
+Native Apex access to these APIs - no auth handling needed. [Docs](https://developer.salesforce.com/docs/atlas.en-us.revenue_lifecycle_management_dev_guide.meta/revenue_lifecycle_management_dev_guide/billing_connect_api_namespace.htm)
 
 ## Rate Limits
 
@@ -138,7 +138,7 @@ For production, use Named Credentials instead of `UserInfo.getSessionId()`.
 
 | Error | Solution |
 |-------|----------|
-| `401 Unauthorized` | Token expired—get new one |
+| `401 Unauthorized` | Token expired - get new one |
 | `400 Bad Request` | Check payload structure |
 | `403 Forbidden` | Check permission sets |
 | `404 Not Found` | Verify API version and IDs |

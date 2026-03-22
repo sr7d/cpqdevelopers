@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Migrate to Salesforce CPQ
-description: Migrating data to Salesforce CPQ is a critical step in implementing or transitioning to this powerful tool. Whether you’re moving from a legacy CPQ system, spreadsheets, or another CRM, the process involves a detailed plan and a clear strategy to ensure data integrity and accuracy. In this article, we’ll discuss best practices for Salesforce CPQ data migration, the challenges you may face, and how to overcome them.
+description: Best practices for Salesforce CPQ data migration  -  field mapping, data cleansing, phased rollouts, and tool recommendations for teams moving from spreadsheets, legacy CPQ, or another CRM.
 date: 2024-08-29 15:01:35 +0300
 author: admin
 image: /images/migration.png
@@ -133,4 +133,4 @@ Migrating data to Salesforce CPQ requires careful planning, a solid understandin
 
 If you're starting a new implementation in 2025 or later, you should evaluate whether Salesforce CPQ or Revenue Cloud is the right choice. CPQ reached End of Sale in March 2025, meaning it's now in maintenance mode.
 
-For a detailed comparison to help you decide, see: [Revenue Cloud vs CPQ — A Business Decision Maker's Guide](/revenue-cloud-vs-cpq-business-decision-guide/)
+For a detailed comparison to help you decide, see: [Comparing Salesforce CPQ and Revenue Cloud](/comparing-salesforce-cpq-to-revenue-cloud/)
