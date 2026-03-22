@@ -75,7 +75,7 @@ RLM handles disruptions such as part shortages, logistics delays, or order chang
 
 Revenue Cloud is a significant upgrade in most areas  -  but one gap that catches teams off guard is native quote document generation. Legacy CPQ shipped with pre-built quote templates, a line item editor, and DocuSign integration from day one. Revenue Cloud's native quoting layer is more limited; most production implementations add a dedicated quoting layer on top.
 
-If generating professional PDF quotes is a hard requirement before you can fully migrate, [SilkQuote](https://silkquote.com) is a free AppExchange app built specifically for Revenue Cloud that fills this gap  -  no licensing cost, deploys in under an hour.
+{% include silkquote-callout.html %}
 
 ## Conclusion
 

@@ -62,7 +62,7 @@ This is the stage where Revenue Cloud's native offering is thinnest. Revenue Clo
 
 Legacy CPQ had pre-built quote templates and DocuSign integration from day one. Revenue Cloud doesn't ship with an equivalent out of the box.
 
-The free option that closes this gap: [SilkQuote](https://silkquote.com) is a free AppExchange app built specifically for Revenue Cloud quoting. It handles quote document generation without the overhead of a full CPQ implementation  -  worth evaluating before building something custom.
+{% include silkquote-callout.html %}
 
 ---
 

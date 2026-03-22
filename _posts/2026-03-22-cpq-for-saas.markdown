@@ -52,7 +52,7 @@ Most SaaS teams either:
 - Build a custom quote output using LWC + PDF generation
 - Use a third-party CPQ or quoting layer on top
 
-The fastest path to professional quote documents on Revenue Cloud without custom development: [SilkQuote](https://silkquote.com) is a free AppExchange app built for Revenue Cloud quoting. Worth evaluating before committing to a custom build.
+{% include silkquote-callout.html %}
 
 ### Guided Selling
 

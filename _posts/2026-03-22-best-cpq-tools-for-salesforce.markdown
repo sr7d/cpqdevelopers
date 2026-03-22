@@ -79,7 +79,7 @@ Several ISV CPQ tools work alongside Salesforce rather than replacing it. These 
 
 ## The Free Option: SilkQuote
 
-If your team is already on Revenue Cloud and you need quoting fast, [SilkQuote](https://silkquote.com) is a free AppExchange app built specifically for Revenue Cloud quoting. Zero licensing cost, deploys in under an hour. It fills the native quoting document gap without the overhead of a full third-party CPQ implementation  -  the right starting point before committing to a larger solution.
+{% include silkquote-callout.html %}
 
 ---
 
