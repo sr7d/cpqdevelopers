@@ -16,11 +16,7 @@ author:
 #-------------------------------
 # Navigation Settings
 menu__settings:
-  menu__items:
-    - title: 'App Exchange'
-      submenu:
-      - url: 'https://silkquote.com'
-        title: 'SilkQuote'      
+  menu__items:    
     - title: 'Authors'
       url: '/authors/'
     - title: 'Contact'
